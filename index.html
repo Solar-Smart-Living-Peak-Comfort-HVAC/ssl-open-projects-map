@@ -8,7 +8,7 @@
 #app{display:flex;height:100%}#side{width:340px;overflow:auto;border-right:1px solid #ccc;background:#fafafa;display:flex;flex-direction:column}
 #map{flex:1}header{padding:10px;background:#123;color:#fff}header h1{font-size:16px;margin:0}header small{opacity:.8}
 #legend{padding:8px;display:flex;flex-wrap:wrap;gap:4px}.chip{font-size:12px;padding:4px 8px;border-radius:12px;border:1px solid #999;cursor:pointer;user-select:none}
-.chip.off{opacity:.35}#q{margin:6px 8px;padding:8px;font-size:15px}#list{flex:1;overflow:auto}
+.chip.off{opacity:.45}.chip input{width:16px;height:16px;margin:0;cursor:pointer}.chip{cursor:pointer}#q{margin:6px 8px;padding:8px;font-size:15px}#list{flex:1;overflow:auto}
 .item{padding:8px 10px;border-bottom:1px solid #eee;cursor:pointer;font-size:13px}.item:hover{background:#eef}
 .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;border:1px solid #333}
 .pop a{display:inline-block;margin:3px 6px 3px 0;padding:6px 8px;background:#1565c0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px}
@@ -47,7 +47,9 @@ CATS.forEach(cg=>{const items=P.filter(o=>o.cat===cg.k&&!off.has(cg.k)&&(!q||(o.
  list.appendChild(d)})});
  if(first&&b.length){map.fitBounds(b,{padding:[30,30]});first=false}}
 function legend(){const el=document.getElementById('legend');el.innerHTML='';
-CATS.forEach(cg=>{const n=P.filter(o=>o.cat===cg.k).length;const x=document.createElement('span');x.className='chip'+(off.has(cg.k)?' off':'');x.style.cssText='background:'+cg.c+';color:#fff;border-color:#333';x.textContent=`${cg.n} (${n})`;x.onclick=()=>{off.has(cg.k)?off.delete(cg.k):off.add(cg.k);legend();render()};el.appendChild(x)})}
+CATS.forEach(cg=>{const n=P.filter(o=>o.cat===cg.k).length;const lb=document.createElement('label');lb.className='chip';lb.style.cssText='background:'+cg.c+';color:#fff;border-color:#333;display:flex;align-items:center;gap:6px';
+const cb=document.createElement('input');cb.type='checkbox';cb.checked=!off.has(cg.k);cb.setAttribute('aria-label','Show '+cg.n);cb.onchange=()=>{cb.checked?off.delete(cg.k):off.add(cg.k);lb.classList.toggle('off',!cb.checked);render()};
+lb.classList.toggle('off',off.has(cg.k));lb.appendChild(cb);lb.appendChild(document.createTextNode(`${cg.n} (${n})`));el.appendChild(lb)})}
 async function load(){let j;try{const r=await fetch('projects.json?t='+Date.now());j=await r.json()}catch(e){const st=document.getElementById('stale');st.style.display='block';st.textContent='Warning: could not load data. Showing last loaded data, if any.';return}P=j.projects;P.forEach(o=>o.cat=catOf(o));window.GEN=j.generated;
 document.getElementById('meta').textContent=`${P.length} open · ${P.filter(o=>o.lat).length} mapped · data updated ${j.generated} · updates about every 30 min on weekdays, 6am-8pm Mountain · page rechecks every 30 min`;const age=(Date.now()-new Date(String(j.generated).replace(/([+-]\d\d)(\d\d)$/,'$1:$2')).getTime())/60000;const st=document.getElementById('stale');
 if(isNaN(age)||age>30){st.style.display='block';st.textContent=isNaN(age)?'Warning: last-updated time unknown, data may be out of date.':`Warning: data is ${Math.round(age/60*10)/10} hours old and may be out of date.`}else st.style.display='none';
