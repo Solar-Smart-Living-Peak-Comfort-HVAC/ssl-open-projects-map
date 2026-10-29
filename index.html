@@ -29,7 +29,7 @@ function catOf(o){const m=/^\s*(\d+)/.exec(o.stage||'');const n=m?(m[1].length==
 if(nm==='completed'||nm.includes('collect')||nm.includes('accounting'))return 'co';if(nm.includes('inspection'))return 'in';
 if(n!==null){if(n>=10)return 'co';if(n===8)return 'in';if(n>=5)return 'st';return 'ns'}return 'ns'}
 const catInfo=k=>CATS.find(x=>x.k===k);
-let P=[],markers={},off=new Set(),layer=L.layerGroup().addTo(map),first=true;
+let P=[],markers={},off=new Set(),offS=new Set(),mode='groups',layer=L.layerGroup().addTo(map),first=true;
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const col=c=>/^#[0-9a-fA-F]{3,8}$/.test(c||'')?c:'#888';
 const lk=(u,t)=>u?`<a href="${esc(u)}" target="_blank" rel="noopener">${t}</a>`:`<span class="na">${t} unavailable</span>`;
@@ -39,7 +39,7 @@ ${esc(o.address||'address unavailable')}${o.outside?' <i>(outside El Paso/Las Cr
 📞 ${o.phone?`<a href="tel:${o.phone.replace(/\D/g,'')}">${esc(o.phone)}</a>`:'<span class="na">phone unavailable</span>'}<br>
 ${lk(o.zoho,'Zoho Projects')}${lk(o.companycam,'CompanyCam')}${lk(o.fsm,'FSM WO'+(o.fsm_wo?' '+esc(o.fsm_wo):''))}${lk(o.podium,'Podium contact')}${lk(dir,'Directions')}</div>`}
 function render(){layer.clearLayers();markers={};const q=document.getElementById('q').value.toLowerCase();const list=document.getElementById('list');list.innerHTML='';const b=[];
-CATS.forEach(cg=>{const items=P.filter(o=>o.cat===cg.k&&!off.has(cg.k)&&(!q||(o.name+o.prj+(o.address||'')).toLowerCase().includes(q)));if(!items.length)return;
+CATS.forEach(cg=>{const items=P.filter(o=>o.cat===cg.k&&!off.has(cg.k)&&!offS.has(o.stage)&&(!q||(o.name+o.prj+(o.address||'')).toLowerCase().includes(q)));if(!items.length)return;
  const h=document.createElement('div');h.style.cssText='padding:6px 10px;font-weight:600;font-size:13px;color:#fff;background:'+cg.c;h.textContent=cg.n+' ('+items.length+')';list.appendChild(h);
  items.forEach(o=>{const d=document.createElement('div');d.className='item';d.innerHTML=`<span class="dot" style="background:${cg.c}"></span><b>${esc(o.prj)}</b> ${esc(o.name)}<br><small>${esc(o.stage)} · ${esc(o.address||'no address')}</small>`;
  if(o.lat){const m=L.circleMarker([o.lat,o.lng],{radius:9,color:'#000',weight:1.5,fillColor:cg.c,fillOpacity:.95}).bindPopup(pop(o),{maxWidth:300}).addTo(layer);markers[o.id]=m;if(!o.outside)b.push([o.lat,o.lng]);
@@ -47,9 +47,15 @@ CATS.forEach(cg=>{const items=P.filter(o=>o.cat===cg.k&&!off.has(cg.k)&&(!q||(o.
  list.appendChild(d)})});
  if(first&&b.length){map.fitBounds(b,{padding:[30,30]});first=false}}
 function legend(){const el=document.getElementById('legend');el.innerHTML='';
-CATS.forEach(cg=>{const n=P.filter(o=>o.cat===cg.k).length;const lb=document.createElement('label');lb.className='chip';lb.style.cssText='background:'+cg.c+';color:#fff;border-color:#333;display:flex;align-items:center;gap:6px';
-const cb=document.createElement('input');cb.type='checkbox';cb.checked=!off.has(cg.k);cb.setAttribute('aria-label','Show '+cg.n);cb.onchange=()=>{cb.checked?off.delete(cg.k):off.add(cg.k);lb.classList.toggle('off',!cb.checked);render()};
-lb.classList.toggle('off',off.has(cg.k));lb.appendChild(cb);lb.appendChild(document.createTextNode(`${cg.n} (${n})`));el.appendChild(lb)})}
+const bar=document.createElement('div');bar.style.cssText='width:100%;display:flex;gap:6px;align-items:center;font-size:12px;margin-bottom:2px';bar.appendChild(document.createTextNode('Filter by:'));
+[['groups','4 groups'],['statuses','Each status']].forEach(([m,t])=>{const b=document.createElement('button');b.textContent=t;b.style.cssText='padding:3px 10px;border:1px solid #1565c0;border-radius:12px;cursor:pointer;background:'+(mode===m?'#1565c0':'#fff')+';color:'+(mode===m?'#fff':'#1565c0');b.onclick=()=>{mode=m;off.clear();offS.clear();legend();render()};bar.appendChild(b)});
+if(mode==='statuses'){[['All',()=>offS.clear()],['None',()=>P.forEach(o=>offS.add(o.stage))]].forEach(([t,f])=>{const b=document.createElement('button');b.textContent=t;b.style.cssText='padding:3px 8px;border:1px solid #888;border-radius:12px;cursor:pointer;background:#fff;margin-left:auto'+(t==='None'?';margin-left:0':'');b.onclick=()=>{f();legend();render()};bar.appendChild(b)})}
+el.appendChild(bar);
+const mk=(label,color,n,isOff,toggle)=>{const lb=document.createElement('label');lb.className='chip';lb.style.cssText='background:'+color+';color:#fff;border-color:#333;display:flex;align-items:center;gap:6px';
+const cb=document.createElement('input');cb.type='checkbox';cb.checked=!isOff;cb.setAttribute('aria-label','Show '+label);cb.onchange=()=>{toggle(cb.checked);lb.classList.toggle('off',!cb.checked);render()};
+lb.classList.toggle('off',isOff);lb.appendChild(cb);lb.appendChild(document.createTextNode(`${label} (${n})`));el.appendChild(lb)};
+if(mode==='groups'){CATS.forEach(cg=>mk(cg.n,cg.c,P.filter(o=>o.cat===cg.k).length,off.has(cg.k),on=>on?off.delete(cg.k):off.add(cg.k)))}
+else{const st={};P.forEach(o=>{st[o.stage]=st[o.stage]||{n:0,cat:o.cat};st[o.stage].n++});Object.keys(st).sort().forEach(k=>mk(k,catInfo(st[k].cat).c,st[k].n,offS.has(k),on=>on?offS.delete(k):offS.add(k)))}}
 async function load(){let j;try{const r=await fetch('projects.json?t='+Date.now());j=await r.json()}catch(e){const st=document.getElementById('stale');st.style.display='block';st.textContent='Warning: could not load data. Showing last loaded data, if any.';return}P=j.projects;P.forEach(o=>o.cat=catOf(o));window.GEN=j.generated;
 document.getElementById('meta').textContent=`${P.length} open · ${P.filter(o=>o.lat).length} mapped · data updated ${j.generated} · updates about every 30 min on weekdays, 6am-8pm Mountain · page rechecks every 30 min`;const age=(Date.now()-new Date(String(j.generated).replace(/([+-]\d\d)(\d\d)$/,'$1:$2')).getTime())/60000;const st=document.getElementById('stale');
 if(isNaN(age)||age>30){st.style.display='block';st.textContent=isNaN(age)?'Warning: last-updated time unknown, data may be out of date.':`Warning: data is ${Math.round(age/60*10)/10} hours old and may be out of date.`}else st.style.display='none';
