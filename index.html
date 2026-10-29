@@ -13,12 +13,20 @@
 .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;border:1px solid #333}
 .pop a{display:inline-block;margin:3px 6px 3px 0;padding:6px 8px;background:#1565c0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px}
 .stale{display:none;background:#b71c1c;color:#fff;padding:6px 10px;font-size:13px}.upd{margin-top:6px}.upd button{background:#2e7d32;color:#fff;border:0;border-radius:4px;padding:6px 14px;font-size:14px;cursor:pointer}.upd button:disabled{background:#777;cursor:default}.upd a{color:#9cf;font-size:11px;cursor:pointer;text-decoration:underline}.upd small{display:block;margin-top:4px}.na{color:#999;font-size:12px;display:block}#toggle{display:none}
-@media(max-width:700px){#app{flex-direction:column}#side{width:100%;height:45%;border-right:0;border-bottom:1px solid #ccc}#side.min{height:auto}#side.min #legend,#side.min #q,#side.min #list{display:none}#toggle{display:inline;float:right;background:#fff;border:0;padding:4px 10px;border-radius:4px}}
+@media(max-width:700px){html,body{height:100dvh}#app{flex-direction:column;height:100dvh}#map{order:1;flex:1;min-height:0}#side{order:2;width:100%;height:auto;max-height:58dvh;border-right:0;border-top:2px solid #123;flex:none}
+header{padding:6px 10px;display:flex;flex-wrap:wrap;align-items:center;gap:2px 8px}header h1{font-size:13px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}header small{width:100%;font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#toggle{display:inline-block;order:2;background:#fff;border:0;padding:6px 12px;border-radius:14px;font-size:13px;font-weight:600}
+.upd{margin:0;padding:2px 10px 4px;background:#123;color:#fff}.upd small{font-size:11px}.stale{font-size:11px;padding:4px 10px}
+#side.min #legend,#side.min #q,#side.min #list{display:none}#legend{padding:6px 8px;max-height:30dvh;overflow:auto}.chip{padding:5px 8px}#q{margin:4px 8px;padding:6px;font-size:14px}.item{padding:6px 10px}
+.leaflet-control-layers{margin-top:6px}}
 </style></head><body><div id="app"><div id="side">
-<header><button id="toggle" onclick="side.classList.toggle('min')">List</button><h1>SSL open Zoho Projects — El Paso / Las Cruces</h1><small id="meta">loading…</small></header><div class="upd" id="upd"></div><div id="stale" class="stale"></div>
+<header><button id="toggle" onclick="toggleSide()">Filters &amp; list ▲</button><h1>SSL open Zoho Projects — El Paso / Las Cruces</h1><small id="meta">loading…</small></header><div class="upd" id="upd"></div><div id="stale" class="stale"></div>
 <div id="legend"></div><input id="q" placeholder="Search name, PRJ, address…"><div id="list"></div></div><div id="map"></div></div>
 <script>
 const side=document.getElementById('side');
+function toggleSide(){side.classList.toggle('min');syncT();setTimeout(()=>map.invalidateSize(),60)}
+function syncT(){const t=document.getElementById('toggle');if(t)t.innerHTML=side.classList.contains('min')?'Filters &amp; list ▲':'Hide ▼'}
+if(innerWidth<=700)side.classList.add('min');
 const sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Imagery © Esri'});
 const lbl=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',{maxZoom:19});
 const street=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'});
@@ -43,7 +51,7 @@ CATS.forEach(cg=>{const items=P.filter(o=>o.cat===cg.k&&!off.has(cg.k)&&!offS.ha
  const h=document.createElement('div');h.style.cssText='padding:6px 10px;font-weight:600;font-size:13px;color:#fff;background:'+cg.c;h.textContent=cg.n+' ('+items.length+')';list.appendChild(h);
  items.forEach(o=>{const d=document.createElement('div');d.className='item';d.innerHTML=`<span class="dot" style="background:${cg.c}"></span><b>${esc(o.prj)}</b> ${esc(o.name)}<br><small>${esc(o.stage)} · ${esc(o.address||'no address')}</small>`;
  if(o.lat){const m=L.circleMarker([o.lat,o.lng],{radius:9,color:'#000',weight:1.5,fillColor:cg.c,fillOpacity:.95}).bindPopup(pop(o),{maxWidth:300}).addTo(layer);markers[o.id]=m;if(!o.outside)b.push([o.lat,o.lng]);
- d.onclick=()=>{map.setView([o.lat,o.lng],16);m.openPopup();if(innerWidth<700)side.classList.add('min')}}
+ d.onclick=()=>{map.setView([o.lat,o.lng],16);m.openPopup();if(innerWidth<=700){side.classList.add('min');syncT();setTimeout(()=>map.invalidateSize(),60)}}}
  list.appendChild(d)})});
  if(first&&b.length){map.fitBounds(b,{padding:[30,30]});first=false}}
 function legend(){const el=document.getElementById('legend');el.innerHTML='';
