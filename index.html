@@ -12,10 +12,10 @@
 .item{padding:8px 10px;border-bottom:1px solid #eee;cursor:pointer;font-size:13px}.item:hover{background:#eef}
 .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;border:1px solid #333}
 .pop a{display:inline-block;margin:3px 6px 3px 0;padding:6px 8px;background:#1565c0;color:#fff;border-radius:4px;text-decoration:none;font-size:13px}
-.na{color:#999;font-size:12px;display:block}#toggle{display:none}
+.stale{display:none;background:#b71c1c;color:#fff;padding:6px 10px;font-size:13px}.na{color:#999;font-size:12px;display:block}#toggle{display:none}
 @media(max-width:700px){#app{flex-direction:column}#side{width:100%;height:45%;border-right:0;border-bottom:1px solid #ccc}#side.min{height:auto}#side.min #legend,#side.min #q,#side.min #list{display:none}#toggle{display:inline;float:right;background:#fff;border:0;padding:4px 10px;border-radius:4px}}
 </style></head><body><div id="app"><div id="side">
-<header><button id="toggle" onclick="side.classList.toggle('min')">List</button><h1>SSL open Zoho Projects — El Paso / Las Cruces</h1><small id="meta">loading…</small></header>
+<header><button id="toggle" onclick="side.classList.toggle('min')">List</button><h1>SSL open Zoho Projects — El Paso / Las Cruces</h1><small id="meta">loading…</small></header><div id="stale" class="stale"></div>
 <div id="legend"></div><input id="q" placeholder="Search name, PRJ, address…"><div id="list"></div></div><div id="map"></div></div>
 <script>
 const side=document.getElementById('side');
@@ -26,22 +26,25 @@ const map=L.map('map',{layers:[sat,lbl],tap:true}).setView([31.95,-106.5],9);
 L.control.layers({'Satellite':L.layerGroup([sat,lbl]),'Streets':street}).addTo(map);
 let P=[],markers={},off=new Set(),layer=L.layerGroup().addTo(map),first=true;
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const col=c=>/^#[0-9a-fA-F]{3,8}$/.test(c||'')?c:'#888';
 const lk=(u,t)=>u?`<a href="${esc(u)}" target="_blank" rel="noopener">${t}</a>`:`<span class="na">${t} unavailable</span>`;
 function pop(o){const dir=o.address?'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(o.address):null;
-return `<div class="pop"><b>${esc(o.name)}</b><br>${esc(o.prj)} · <span style="background:${o.color};padding:1px 5px;border-radius:3px">${esc(o.stage)}</span><br>
+return `<div class="pop"><b>${esc(o.name)}</b><br>${esc(o.prj)} · <span style="background:${col(o.color)};padding:1px 5px;border-radius:3px">${esc(o.stage)}</span><br>
 ${esc(o.address||'address unavailable')}${o.outside?' <i>(outside El Paso/Las Cruces area)</i>':''}<br>
 📞 ${o.phone?`<a href="tel:${o.phone.replace(/\D/g,'')}">${esc(o.phone)}</a>`:'<span class="na">phone unavailable</span>'}<br>
 ${lk(o.zoho,'Zoho Projects')}${lk(o.companycam,'CompanyCam')}${lk(o.fsm,'FSM WO'+(o.fsm_wo?' '+esc(o.fsm_wo):''))}${lk(o.podium,'Podium contact')}${lk(dir,'Directions')}</div>`}
 function render(){layer.clearLayers();markers={};const q=document.getElementById('q').value.toLowerCase();const list=document.getElementById('list');list.innerHTML='';const b=[];
 P.forEach(o=>{if(off.has(o.stage))return;if(q&&!(o.name+o.prj+(o.address||'')).toLowerCase().includes(q))return;
- const d=document.createElement('div');d.className='item';d.innerHTML=`<span class="dot" style="background:${o.color}"></span><b>${esc(o.prj)}</b> ${esc(o.name)}<br><small>${esc(o.stage)} · ${esc(o.address||'no address')}</small>`;
- if(o.lat){const m=L.circleMarker([o.lat,o.lng],{radius:9,color:'#000',weight:1.5,fillColor:o.color,fillOpacity:.95}).bindPopup(pop(o),{maxWidth:300}).addTo(layer);markers[o.id]=m;if(!o.outside)b.push([o.lat,o.lng]);
+ const d=document.createElement('div');d.className='item';d.innerHTML=`<span class="dot" style="background:${col(o.color)}"></span><b>${esc(o.prj)}</b> ${esc(o.name)}<br><small>${esc(o.stage)} · ${esc(o.address||'no address')}</small>`;
+ if(o.lat){const m=L.circleMarker([o.lat,o.lng],{radius:9,color:'#000',weight:1.5,fillColor:col(o.color),fillOpacity:.95}).bindPopup(pop(o),{maxWidth:300}).addTo(layer);markers[o.id]=m;if(!o.outside)b.push([o.lat,o.lng]);
  d.onclick=()=>{map.setView([o.lat,o.lng],16);m.openPopup();if(innerWidth<700)side.classList.add('min')}}
  list.appendChild(d)});
  if(first&&b.length){map.fitBounds(b,{padding:[30,30]});first=false}}
 function legend(){const c={},n={};P.forEach(o=>{c[o.stage]=o.color;n[o.stage]=(n[o.stage]||0)+1});const el=document.getElementById('legend');el.innerHTML='';
-Object.keys(c).sort().forEach(s=>{const x=document.createElement('span');x.className='chip'+(off.has(s)?' off':'');x.style.background=c[s];x.textContent=`${s} (${n[s]})`;x.onclick=()=>{off.has(s)?off.delete(s):off.add(s);legend();render()};el.appendChild(x)})}
-async function load(){const r=await fetch('projects.json?t='+Date.now());const j=await r.json();P=j.projects;
-document.getElementById('meta').textContent=`${P.length} open · ${P.filter(o=>o.lat).length} mapped · data as of ${j.generated} · auto-refresh 5 min`;legend();render()}
+Object.keys(c).sort().forEach(s=>{const x=document.createElement('span');x.className='chip'+(off.has(s)?' off':'');x.style.background=col(c[s]);x.textContent=`${s} (${n[s]})`;x.onclick=()=>{off.has(s)?off.delete(s):off.add(s);legend();render()};el.appendChild(x)})}
+async function load(){let j;try{const r=await fetch('projects.json?t='+Date.now());j=await r.json()}catch(e){const st=document.getElementById('stale');st.style.display='block';st.textContent='Warning: could not load data. Showing last loaded data, if any.';return}P=j.projects;
+document.getElementById('meta').textContent=`${P.length} open · ${P.filter(o=>o.lat).length} mapped · data as of ${j.generated} · auto-refresh 5 min`;const age=(Date.now()-new Date(String(j.generated).replace(/([+-]\d\d)(\d\d)$/,'$1:$2')).getTime())/60000;const st=document.getElementById('stale');
+if(isNaN(age)||age>30){st.style.display='block';st.textContent=isNaN(age)?'Warning: last-updated time unknown, data may be out of date.':`Warning: data is ${Math.round(age/60*10)/10} hours old and may be out of date.`}else st.style.display='none';
+legend();render()}
 document.getElementById('q').oninput=render;load();setInterval(load,300000);
 </script></body></html>
