@@ -43,8 +43,8 @@ P.forEach(o=>{if(off.has(o.stage))return;if(q&&!(o.name+o.prj+(o.address||'')).t
 function legend(){const c={},n={};P.forEach(o=>{c[o.stage]=o.color;n[o.stage]=(n[o.stage]||0)+1});const el=document.getElementById('legend');el.innerHTML='';
 Object.keys(c).sort().forEach(s=>{const x=document.createElement('span');x.className='chip'+(off.has(s)?' off':'');x.style.background=col(c[s]);x.textContent=`${s} (${n[s]})`;x.onclick=()=>{off.has(s)?off.delete(s):off.add(s);legend();render()};el.appendChild(x)})}
 async function load(){let j;try{const r=await fetch('projects.json?t='+Date.now());j=await r.json()}catch(e){const st=document.getElementById('stale');st.style.display='block';st.textContent='Warning: could not load data. Showing last loaded data, if any.';return}P=j.projects;
-document.getElementById('meta').textContent=`${P.length} open · ${P.filter(o=>o.lat).length} mapped · data as of ${j.generated} · auto-refresh 5 min`;const age=(Date.now()-new Date(String(j.generated).replace(/([+-]\d\d)(\d\d)$/,'$1:$2')).getTime())/60000;const st=document.getElementById('stale');
+document.getElementById('meta').textContent=`${P.length} open · ${P.filter(o=>o.lat).length} mapped · data rebuilt ${j.generated} (manual rebuild, not on a fixed schedule) · page rechecks every 30 min`;const age=(Date.now()-new Date(String(j.generated).replace(/([+-]\d\d)(\d\d)$/,'$1:$2')).getTime())/60000;const st=document.getElementById('stale');
 if(isNaN(age)||age>30){st.style.display='block';st.textContent=isNaN(age)?'Warning: last-updated time unknown, data may be out of date.':`Warning: data is ${Math.round(age/60*10)/10} hours old and may be out of date.`}else st.style.display='none';
 legend();render()}
-document.getElementById('q').oninput=render;load();setInterval(load,300000);
+document.getElementById('q').oninput=render;load();setInterval(load,1800000);
 </script></body></html>
