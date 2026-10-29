@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T09:03:28-0600",
+ "generated": "2026-10-29T09:32:11-0600",
  "projects": [
   {
    "prj": "PRJ-211",
@@ -15,8 +15,8 @@
    "phone": "(915) 203-2435",
    "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001278003/dashboard",
    "companycam": "https://app.companycam.com/projects/117699246",
-   "fsm": null,
-   "fsm_wo": null,
+   "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004069332",
+   "fsm_wo": "26WO-2651",
    "podium": null,
    "outside": false
   },
@@ -1506,8 +1506,8 @@
    "prj": "PRJ-96",
    "id": "1521004000000423167",
    "name": "Wurm, Charles - 2601046BATT/HDM - 5/15/2026",
-   "stage": "08. Inspections",
-   "color": "#00000000",
+   "stage": "09. Corrections",
+   "color": "#FF8819",
    "group": "EE Install",
    "address": "12120 Nesreen Dr, El Paso, TX 79934",
    "lat": 31.9582419,
