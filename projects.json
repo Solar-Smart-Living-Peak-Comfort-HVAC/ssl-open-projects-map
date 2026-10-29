@@ -1,6 +1,25 @@
 {
- "generated": "2026-10-29T16:10:56-0600",
+ "generated": "2026-10-29T16:34:41-0600",
  "projects": [
+  {
+   "prj": "PRJ-212",
+   "id": "1521004000001278062",
+   "name": "ASFAW LLC - 1630 McNutt Road - 10/28/2026",
+   "stage": "01. New",
+   "color": "#F5EE76",
+   "group": "Commercial",
+   "address": "1630 McNutt Road, Sunland Park, NM 88063",
+   "lat": 31.7962119,
+   "lng": -106.5676729,
+   "source": "nominatim",
+   "phone": "(915) 204-1561",
+   "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001278062/dashboard",
+   "companycam": null,
+   "fsm": null,
+   "fsm_wo": null,
+   "podium": null,
+   "outside": false
+  },
   {
    "prj": "PRJ-211",
    "id": "1521004000001278003",
