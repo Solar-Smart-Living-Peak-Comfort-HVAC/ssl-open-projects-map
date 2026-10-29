@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T10:34:46-0600",
+ "generated": "2026-10-29T11:05:13-0600",
  "projects": [
   {
    "prj": "PRJ-211",
@@ -1107,8 +1107,8 @@
    "prj": "PRJ-132",
    "id": "1521004000000532179",
    "name": "Pate, Daniel - 2601084BATT - 8/15/2026",
-   "stage": "03. Ops Review",
-   "color": "#AB7D0C",
+   "stage": "04. Ready To Schedule",
+   "color": "#084A99",
    "group": "EE Install",
    "address": "83 Diablo Dr, Alamogordo, NM 88310",
    "lat": 32.8288655,
@@ -1677,8 +1677,8 @@
    "prj": "PRJ-82",
    "id": "1521004000000412028",
    "name": "Burson, Lloyd - 2601078BATT/PV - 8/01/2026",
-   "stage": "035. Ops Ready",
-   "color": "#98CA3C",
+   "stage": "04. Ready To Schedule",
+   "color": "#084A99",
    "group": "EE Install",
    "address": "2 Cielo Del Rey, Anthony, NM 88021",
    "lat": 31.9093858,
