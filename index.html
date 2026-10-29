@@ -66,7 +66,7 @@ if(mode==='groups'){CATS.forEach(cg=>mk(cg.n,cg.c,P.filter(o=>o.cat===cg.k).leng
 else{const st={};P.forEach(o=>{st[o.stage]=st[o.stage]||{n:0,cat:o.cat};st[o.stage].n++});Object.keys(st).sort().forEach(k=>mk(k,catInfo(st[k].cat).c,st[k].n,offS.has(k),on=>on?offS.delete(k):offS.add(k)))}}
 async function load(){let j;try{const r=await fetch('projects.json?t='+Date.now());j=await r.json()}catch(e){const st=document.getElementById('stale');st.style.display='block';st.textContent='Warning: could not load data. Showing last loaded data, if any.';return}P=j.projects;P.forEach(o=>o.cat=catOf(o));window.GEN=j.generated;
 document.getElementById('meta').textContent=`${P.length} open · ${P.filter(o=>o.lat).length} mapped · data updated ${j.generated} · updates about every 30 min on weekdays, 6am-8pm Mountain · page rechecks every 30 min`;const age=(Date.now()-new Date(String(j.generated).replace(/([+-]\d\d)(\d\d)$/,'$1:$2')).getTime())/60000;const st=document.getElementById('stale');
-if(isNaN(age)||age>30){st.style.display='block';st.textContent=isNaN(age)?'Warning: last-updated time unknown, data may be out of date.':`Warning: data is ${Math.round(age/60*10)/10} hours old and may be out of date.`}else st.style.display='none';
+if(isNaN(age)||age>30){st.style.display='block';st.textContent=isNaN(age)?'Warning: last-updated time unknown, data may be out of date.':`Warning: data is ${Math.round(age)} minutes old and may be out of date.`}else st.style.display='none';
 legend();render()}
 document.getElementById('q').oninput=render;load();setInterval(load,1800000);
 
