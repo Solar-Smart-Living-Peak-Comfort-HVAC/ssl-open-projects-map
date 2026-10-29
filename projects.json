@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T14:40:20-0600",
+ "generated": "2026-10-29T15:02:02-0600",
  "projects": [
   {
    "prj": "PRJ-211",
@@ -556,8 +556,8 @@
    "prj": "PRJ-171",
    "id": "1521004000000842078",
    "name": "Marquez, Luis - 6978 Red Oak Court - 09/14/2026",
-   "stage": "03. Ops Review",
-   "color": "#AB7D0C",
+   "stage": "04. Ready To Schedule",
+   "color": "#084A99",
    "group": "EE + HVAC Install",
    "address": "6978 Red Oak Ct, El Paso, TX 79924",
    "lat": 31.918531535160845,
