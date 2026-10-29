@@ -32,7 +32,7 @@ const lbl=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Refe
 const street=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'});
 const map=L.map('map',{layers:[sat,lbl],tap:true}).setView([31.95,-106.5],9);
 L.control.layers({'Satellite':L.layerGroup([sat,lbl]),'Streets':street}).addTo(map);
-const CATS=[{k:'ns',n:'Not started',c:'#f9a825'},{k:'st',n:'Started',c:'#1e88e5'},{k:'in',n:'Inspections',c:'#8e24aa'},{k:'co',n:'Collections / accounting / completed',c:'#2e7d32'}];
+const CATS=[{k:'ns',n:'Not started',c:'#f9a825'},{k:'st',n:'Started',c:'#1e88e5'},{k:'in',n:'Inspections',c:'#8e24aa'},{k:'co',n:'Ops Completed',c:'#2e7d32'}];
 function catOf(o){const m=/^\s*(\d+)/.exec(o.stage||'');const n=m?(m[1].length===3&&m[1][0]==='0'?parseInt(m[1],10)/10:parseInt(m[1],10)):null;const nm=(o.stage||'').toLowerCase();
 if(nm==='completed'||nm.includes('collect')||nm.includes('accounting'))return 'co';if(nm.includes('inspection'))return 'in';
 if(n!==null){if(n>=10)return 'co';if(n===8)return 'in';if(n>=5)return 'st';return 'ns'}return 'ns'}
@@ -65,7 +65,7 @@ function legend(){const el=document.getElementById('legend');el.innerHTML='';
 const bar=document.createElement('div');bar.style.cssText='width:100%;display:flex;gap:6px;align-items:center;font-size:12px;margin-bottom:2px';bar.appendChild(document.createTextNode('Filter by:'));
 [['groups','4 groups'],['statuses','Each status']].forEach(([m,t])=>{const b=document.createElement('button');b.textContent=t;b.style.cssText='padding:3px 10px;border:1px solid #1565c0;border-radius:12px;cursor:pointer;background:'+(mode===m?'#1565c0':'#fff')+';color:'+(mode===m?'#fff':'#1565c0');b.onclick=()=>{mode=m;off.clear();offS.clear();legend();render()};bar.appendChild(b)});
 if(mode==='statuses'){[['All',()=>offS.clear()],['None',()=>P.forEach(o=>offS.add(o.stage))]].forEach(([t,f])=>{const b=document.createElement('button');b.textContent=t;b.style.cssText='padding:3px 8px;border:1px solid #888;border-radius:12px;cursor:pointer;background:#fff;margin-left:auto'+(t==='None'?';margin-left:0':'');b.onclick=()=>{f();legend();render()};bar.appendChild(b)})}
-el.appendChild(bar);const nt=document.createElement('div');nt.style.cssText='width:100%;font-size:11px;color:#444;margin-bottom:2px';nt.textContent='Shape = group · Color = Zoho status. ● Not started  ■ Started  ◆ Inspections  ▲ Collections / accounting / completed';el.appendChild(nt);
+el.appendChild(bar);const nt=document.createElement('div');nt.style.cssText='width:100%;font-size:11px;color:#444;margin-bottom:2px';nt.textContent='Shape = group · Color = Zoho status. ● Not started  ■ Started  ◆ Inspections  ▲ Ops Completed';el.appendChild(nt);
 const mk=(label,color,n,isOff,toggle,cg2,zc,sk)=>{const lb=document.createElement('label');lb.className='chip';lb.style.cssText='background:'+color+';color:'+(zc?tcol(color):'#fff')+';border:2px solid #333;display:flex;align-items:center;gap:6px';
 const cb=document.createElement('input');cb.type='checkbox';cb.checked=!isOff;cb.setAttribute('aria-label','Show '+label);cb.onchange=()=>{toggle(cb.checked);lb.classList.toggle('off',!cb.checked);render()};
 lb.classList.toggle('off',isOff);lb.appendChild(cb);if(sk){const ic=document.createElement('span');ic.innerHTML=shp(sk,cg2?color:'#78909c',16,1);ic.style.display='inline-block';lb.appendChild(ic)}lb.appendChild(document.createTextNode(`${label} (${n})`));if(cg2){const t=document.createElement('span');t.innerHTML=tag(cg2);lb.appendChild(t)}el.appendChild(lb)};
