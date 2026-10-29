@@ -1,6 +1,25 @@
 {
- "generated": "2026-10-29T08:10:16-0600",
+ "generated": "2026-10-29T08:38:15-0600",
  "projects": [
+  {
+   "prj": "PRJ-211",
+   "id": "1521004000001278003",
+   "name": "Umeh, Randle - 6123 Via De Los Arboles - 10/29/2026",
+   "stage": "01. New",
+   "color": "#F5EE76",
+   "group": "EE Install",
+   "address": "6123 Via De Los Arboles, El Paso, TX 79932",
+   "lat": 31.8754183,
+   "lng": -106.6160391,
+   "source": "companycam",
+   "phone": "(915) 203-2435",
+   "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001278003/dashboard",
+   "companycam": "https://app.companycam.com/projects/117699246",
+   "fsm": null,
+   "fsm_wo": null,
+   "podium": null,
+   "outside": false
+  },
   {
    "prj": "PRJ-210",
    "id": "1521004000001257016",
@@ -917,8 +936,8 @@
    "prj": "PRJ-147",
    "id": "1521004000000656003",
    "name": "Diaz, Chris - 14248 John Scagno - 2601092PV/BATT - 8/29/2026",
-   "stage": "10. OPS Completed",
-   "color": "#117385",
+   "stage": "09. Corrections",
+   "color": "#FF8819",
    "group": "EE Install",
    "address": "14248 John Scagno, El Paso, TX 79938",
    "lat": 31.7660541,
