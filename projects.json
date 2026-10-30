@@ -1,6 +1,25 @@
 {
- "generated": "2026-10-30T12:38:42-0600",
+ "generated": "2026-10-30T13:08:07-0600",
  "projects": [
+  {
+   "prj": "PRJ-213",
+   "id": "1521004000001298049",
+   "name": "Nieves, Juvencio - 817 Applewood Rd - 10/20/2026",
+   "stage": "03. Ops Review",
+   "color": "#AB7D0C",
+   "group": "EE Install",
+   "address": "817 Applewood Rd, Canutillo, TX 79835",
+   "lat": 31.9637328,
+   "lng": -106.5779132,
+   "source": "companycam",
+   "phone": "915-433-2807",
+   "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001298049/dashboard",
+   "companycam": "https://app.companycam.com/projects/117809703",
+   "fsm": null,
+   "fsm_wo": null,
+   "podium": null,
+   "outside": false
+  },
   {
    "prj": "PRJ-212",
    "id": "1521004000001278062",
