@@ -1,6 +1,25 @@
 {
- "generated": "2026-10-30T14:10:36-0600",
+ "generated": "2026-10-30T14:32:06-0600",
  "projects": [
+  {
+   "prj": "PRJ-214",
+   "id": "1521004000001299064",
+   "name": "Chavez, Paul - 4408 Loma Alegre Dr. - 10/30/2026",
+   "stage": "01. New",
+   "color": "#F5EE76",
+   "group": "EE Install",
+   "address": "4408 Loma Alegre Dr, El Paso, TX 79934",
+   "lat": 31.934591122552494,
+   "lng": -106.44229631870985,
+   "source": "companycam",
+   "phone": null,
+   "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001299064/dashboard",
+   "companycam": "https://app.companycam.com/projects/116571290",
+   "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003798427?tab=Service_Appointments",
+   "fsm_wo": "26WO-2355",
+   "podium": null,
+   "outside": false
+  },
   {
    "prj": "PRJ-213",
    "id": "1521004000001298049",
@@ -651,8 +670,8 @@
    "prj": "PRJ-167",
    "id": "1521004000000808007",
    "name": "Dominguez, Oscar - 5524 Milray Drive - 09/14/2026",
-   "stage": "04. Ready To Schedule",
-   "color": "#084A99",
+   "stage": "05. Scheduled",
+   "color": "#8737F0",
    "group": "EE Install",
    "address": "5524 Milray Dr, El Paso, TX 79932",
    "lat": 31.858998,
