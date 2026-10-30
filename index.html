@@ -20,7 +20,7 @@ header{padding:6px 10px;display:flex;flex-wrap:wrap;align-items:center;gap:2px 8
 #side.min #legend,#side.min #q,#side.min #list{display:none}#legend{padding:6px 8px;max-height:30dvh;overflow:auto}.chip{padding:5px 8px}#q{margin:4px 8px;padding:6px;font-size:14px}.item{padding:6px 10px}
 .leaflet-control-layers{margin-top:6px}}
 </style></head><body><div id="app"><div id="side">
-<header><button id="toggle" onclick="toggleSide()">Filters &amp; list ▲</button><h1>SSL open Zoho Projects — El Paso / Las Cruces</h1><small id="meta">loading…</small></header><div class="upd" id="upd"></div><div id="stale" class="stale"></div>
+<header><button id="toggle" onclick="toggleSide()">Filters &amp; list ▲</button><h1>SSL open Zoho Projects — El Paso / Las Cruces</h1><small id="meta">loading…</small></header><div id="stale" class="stale"></div>
 <div id="legend"></div><input id="q" placeholder="Search name, PRJ, address…"><div id="list"></div></div><div id="map"></div></div>
 <script>
 const side=document.getElementById('side');
@@ -84,21 +84,4 @@ if(isNaN(age)||age>30){st.style.display='block';st.textContent=isNaN(age)?'Warni
 legend();render()}
 document.getElementById('q').oninput=render;load();setInterval(load,1800000);
 
-/* Update button: cosmetic client-side gating only. A GitHub token (Issues: write on this repo) is stored in this browser; the page asks GitHub who it belongs to and shows Update only for allowlisted logins. Pressing it opens an "Update request" issue that the map owner's assistant picks up. */
-const ALLOW=['xlukex15'];const REPO='Solar-Smart-Living-Peak-Comfort-HVAC/ssl-open-projects-map';let who=null,busy=false;
-const gh=(p,o={})=>fetch('https://api.github.com'+p,Object.assign({headers:{Authorization:'Bearer '+localStorage.ghTok,Accept:'application/vnd.github+json'}},o));
-const uEl=document.getElementById('upd');
-async function initUpd(){uEl.innerHTML='';if(!localStorage.ghTok){uEl.innerHTML='<a id="si">Owner sign-in</a>';document.getElementById('si').onclick=()=>{const t=prompt('Paste your GitHub token (Issues: write on '+REPO+'). It stays in this browser only.');if(t){localStorage.ghTok=t.trim();initUpd()}};return}
-try{const r=await gh('/user');if(!r.ok)throw 0;who=(await r.json()).login}catch(e){delete localStorage.ghTok;initUpd();return}
-if(!ALLOW.includes(who.toLowerCase())){uEl.innerHTML='<small>Signed in as '+esc(who)+' (no Update access) · <a id="so">sign out</a></small>';document.getElementById('so').onclick=()=>{delete localStorage.ghTok;initUpd()};return}
-uEl.innerHTML='<button id="ub">Update</button> <a id="so">sign out</a><small id="us"></small>';document.getElementById('so').onclick=()=>{delete localStorage.ghTok;initUpd()};document.getElementById('ub').onclick=doUpdate}
-async function doUpdate(){if(busy)return;busy=true;const b=document.getElementById('ub'),us=document.getElementById('us');b.disabled=true;b.textContent='Updating…';
-try{const prev=window.GEN;const ex=await (await gh('/repos/'+REPO+'/issues?state=open&creator='+who+'&per_page=20')).json();
-if(!ex.some(i=>/^Update request/.test(i.title))){const r=await gh('/repos/'+REPO+'/issues',{method:'POST',body:JSON.stringify({title:'Update request',body:'Requested from the map page by '+who+' at '+new Date().toISOString()})});if(!r.ok)throw new Error('GitHub '+r.status)}
-us.textContent='Update requested. This usually takes a few minutes; the map reloads itself when new data lands.';
-const t0=Date.now();while(Date.now()-t0<15*60000){await new Promise(r=>setTimeout(r,20000));const j=await (await fetch('projects.json?t='+Date.now())).json();if(j.generated!==prev){await load();us.textContent='Updated '+j.generated;break}}
-if(window.GEN===prev)us.textContent='Still waiting. The data will show up on the next page check.'}
-catch(e){us.textContent='Could not send the update request ('+e.message+').'}
-b.disabled=false;b.textContent='Update';busy=false}
-initUpd();
 </script></body></html>
