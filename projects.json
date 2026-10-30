@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T09:37:48-0600",
+ "generated": "2026-10-30T10:03:20-0600",
  "projects": [
   {
    "prj": "PRJ-212",
@@ -347,8 +347,8 @@
    "prj": "PRJ-184",
    "id": "1521004000001037003",
    "name": "Sanetra, Mark - 1624 Jose Bombach Drive - 10/05/2026",
-   "stage": "07. Installed",
-   "color": "#F9A2C5",
+   "stage": "08. Inspections",
+   "color": "#00000000",
    "group": "EE Install",
    "address": "1624 Jose Bombach Dr, El Paso, TX 79936",
    "lat": 31.741600203899495,
@@ -1658,8 +1658,8 @@
    "prj": "PRJ-83",
    "id": "1521004000000412066",
    "name": "Norris, Cecillia - 2601077PV/HVAC - 7/30/2026",
-   "stage": "09. Corrections",
-   "color": "#FF8819",
+   "stage": "07. Installed",
+   "color": "#F9A2C5",
    "group": "EE + HVAC Install",
    "address": "1130 N Mesilla St, Las Cruces, NM 88005",
    "lat": 32.31745864158965,
