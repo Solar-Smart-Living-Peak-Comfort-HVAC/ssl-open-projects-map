@@ -49,7 +49,7 @@ function shp(k,fill,sz,sw){sz=sz||22;const p={circle:'<circle cx="12" cy="12" r=
 return `<svg width="${sz}" height="${sz}" viewBox="0 0 24 24" style="display:block;overflow:visible"><g fill="${fill}" stroke="#fff" stroke-width="${(sw||2)+2.5}" stroke-linejoin="round">${p}</g><g fill="${fill}" stroke="#111" stroke-width="${sw||1.5}" stroke-linejoin="round">${p}</g></svg>`}
 const tag=cg=>`<span style="display:inline-flex;align-items:center;gap:3px;background:rgba(255,255,255,.9);color:#111;border-radius:8px;padding:0 6px 0 2px;font-size:10px;font-weight:600;white-space:nowrap">${shp(cg.k,'#777',12,1)}${esc(cg.n)}</span>`;
 const tagOld2=cg=>`<span style="background:${cg.c};color:#fff;border-radius:8px;padding:0 6px;font-size:10px;font-weight:600;white-space:nowrap">${esc(cg.n)}</span>`;
-let P=[],markers={},off=new Set(),offS=new Set(),mode='groups',layer=L.layerGroup().addTo(map),first=true;
+let P=[],markers={},off=new Set(['in','co']),offS=new Set(),mode='groups',layer=L.layerGroup().addTo(map),first=true;
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const col=c=>/^#[0-9a-fA-F]{3,8}$/.test(c||'')?c:'#888';
 const lk=(u,t)=>u?`<a href="${esc(u)}" target="_blank" rel="noopener">${t}</a>`:`<span class="na">${t} unavailable</span>`;
