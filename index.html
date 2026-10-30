@@ -37,6 +37,11 @@ function catOf(o){const m=/^\s*(\d+)/.exec(o.stage||'');const n=m?(m[1].length==
 if(nm==='completed'||nm.includes('collect')||nm.includes('accounting'))return 'co';if(nm.includes('inspection'))return 'in';
 if(n!==null){if(n>=10)return 'co';if(n===8)return 'in';if(n>=5)return 'st';return 'ns'}return 'ns'}
 const catInfo=k=>CATS.find(x=>x.k===k);
+function wtOf(o){const g=(o.group||'').toLowerCase(),n=(o.name||'').toUpperCase();const w=[];
+if(g==='ee + hvac install'){w.push('EE','HVAC')}else if(g==='ee install'||g==='commercial'){w.push('EE')}else if(g==='hvac install'){w.push('HVAC')}
+else if(/HVAC/.test(n)){w.push('HVAC')}return w}
+let wtMode='all';const wtOk=o=>wtMode==='all'||(o.wt||[]).includes(wtMode);
+const wtTxt=o=>(o.wt&&o.wt.length)?o.wt.join(' + '):'Type not set';
 function zcol(c){c=(c||'').trim();if(/^#[0-9a-fA-F]{8}$/.test(c))c=c.slice(0,7)+'';if(/^#0{6,8}$/.test(c)||!/^#[0-9a-fA-F]{6}$/.test(c))return '#222222';return c}
 function tcol(c){const h=zcol(c).slice(1);const r=parseInt(h.slice(0,2),16),g=parseInt(h.slice(2,4),16),b=parseInt(h.slice(4,6),16);return (0.299*r+0.587*g+0.114*b)>150?'#111':'#fff'}
 const SHP={ns:'circle',st:'square',in:'diamond',co:'triangle'};
@@ -49,14 +54,14 @@ const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"
 const col=c=>/^#[0-9a-fA-F]{3,8}$/.test(c||'')?c:'#888';
 const lk=(u,t)=>u?`<a href="${esc(u)}" target="_blank" rel="noopener">${t}</a>`:`<span class="na">${t} unavailable</span>`;
 function pop(o){const dir=o.address?'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(o.address):null;
-return `<div class="pop"><b>${esc(o.name)}</b><br>${esc(o.prj)} · <span style="background:${zcol(o.color)};color:${tcol(o.color)};padding:1px 5px;border-radius:3px">${esc(o.stage)}</span> ${tag(catInfo(o.cat))}<br>
+return `<div class="pop"><b>${esc(o.name)}</b><br>${esc(o.prj)} · <span style="background:${zcol(o.color)};color:${tcol(o.color)};padding:1px 5px;border-radius:3px">${esc(o.stage)}</span> ${tag(catInfo(o.cat))} <b>${wtTxt(o)}</b><br>
 ${esc(o.address||'address unavailable')}${o.outside?' <i>(outside El Paso/Las Cruces area)</i>':''}<br>
 📞 ${o.phone?`<a href="tel:${o.phone.replace(/\D/g,'')}">${esc(o.phone)}</a>`:'<span class="na">phone unavailable</span>'}<br>
 ${lk(o.zoho,'Zoho Projects')}${lk(o.companycam,'CompanyCam')}${lk(o.fsm,'FSM WO'+(o.fsm_wo?' '+esc(o.fsm_wo):''))}${lk(o.podium,'Podium contact')}${lk(dir,'Directions')}</div>`}
 function render(){layer.clearLayers();markers={};const q=document.getElementById('q').value.toLowerCase();const list=document.getElementById('list');list.innerHTML='';const b=[];
-CATS.forEach(cg=>{const items=P.filter(o=>o.cat===cg.k&&!off.has(cg.k)&&!offS.has(o.stage)&&(!q||(o.name+o.prj+(o.address||'')).toLowerCase().includes(q)));if(!items.length)return;
+CATS.forEach(cg=>{const items=P.filter(o=>o.cat===cg.k&&wtOk(o)&&!off.has(cg.k)&&!offS.has(o.stage)&&(!q||(o.name+o.prj+(o.address||'')).toLowerCase().includes(q)));if(!items.length)return;
  const h=document.createElement('div');h.style.cssText='padding:6px 10px;font-weight:600;font-size:13px;color:#fff;background:#37474f;display:flex;align-items:center;gap:8px';h.innerHTML=shp(cg.k,'#cfd8dc',16,1)+'<span>'+esc(cg.n)+' ('+items.length+')</span>';list.appendChild(h);
- items.forEach(o=>{const d=document.createElement('div');d.className='item';d.innerHTML=`<span style="display:inline-block;vertical-align:middle;margin-right:6px">${shp(cg.k,zcol(o.color),16,1)}</span><b>${esc(o.prj)}</b> ${esc(o.name)}<br><small>${esc(o.stage)} · ${tag(cg)} · ${esc(o.address||'no address')}</small>`;
+ items.forEach(o=>{const d=document.createElement('div');d.className='item';d.innerHTML=`<span style="display:inline-block;vertical-align:middle;margin-right:6px">${shp(cg.k,zcol(o.color),16,1)}</span><b>${esc(o.prj)}</b> ${esc(o.name)}<br><small>${esc(o.stage)} · ${tag(cg)} · ${wtTxt(o)} · ${esc(o.address||'no address')}</small>`;
  if(o.lat){const m=L.marker([o.lat,o.lng],{icon:L.divIcon({html:shp(o.cat,zcol(o.color),24,1.5),className:'',iconSize:[24,24],iconAnchor:[12,12],popupAnchor:[0,-12]})}).bindPopup(pop(o),{maxWidth:300}).addTo(layer);markers[o.id]=m;if(!o.outside)b.push([o.lat,o.lng]);
  d.onclick=()=>{map.setView([o.lat,o.lng],16);m.openPopup();if(innerWidth<=700){side.classList.add('min');syncT();setTimeout(()=>map.invalidateSize(),60)}}}
  list.appendChild(d)})});
@@ -65,13 +70,15 @@ function legend(){const el=document.getElementById('legend');el.innerHTML='';
 const bar=document.createElement('div');bar.style.cssText='width:100%;display:flex;gap:6px;align-items:center;font-size:12px;margin-bottom:2px';bar.appendChild(document.createTextNode('Filter by:'));
 [['groups','4 groups'],['statuses','Each status']].forEach(([m,t])=>{const b=document.createElement('button');b.textContent=t;b.style.cssText='padding:3px 10px;border:1px solid #1565c0;border-radius:12px;cursor:pointer;background:'+(mode===m?'#1565c0':'#fff')+';color:'+(mode===m?'#fff':'#1565c0');b.onclick=()=>{mode=m;off.clear();offS.clear();legend();render()};bar.appendChild(b)});
 if(mode==='statuses'){[['All',()=>offS.clear()],['None',()=>P.forEach(o=>offS.add(o.stage))]].forEach(([t,f])=>{const b=document.createElement('button');b.textContent=t;b.style.cssText='padding:3px 8px;border:1px solid #888;border-radius:12px;cursor:pointer;background:#fff;margin-left:auto'+(t==='None'?';margin-left:0':'');b.onclick=()=>{f();legend();render()};bar.appendChild(b)})}
-el.appendChild(bar);const nt=document.createElement('div');nt.style.cssText='width:100%;font-size:11px;color:#444;margin-bottom:2px';nt.textContent='Shape = group · Color = Zoho status. ● Not started  ■ Started  ◆ Inspections  ▲ Ops Completed';el.appendChild(nt);
+const wb=document.createElement('div');wb.style.cssText='width:100%;display:flex;gap:6px;align-items:center;font-size:12px;margin-bottom:4px';wb.appendChild(document.createTextNode('Work type:'));
+[['all','All'],['EE','EE'],['HVAC','HVAC']].forEach(([m,t])=>{const n=m==='all'?P.length:P.filter(o=>(o.wt||[]).includes(m)).length;const b=document.createElement('button');b.textContent=t+' ('+n+')';b.style.cssText='padding:4px 12px;border:1px solid #2e7d32;border-radius:12px;cursor:pointer;font-weight:600;background:'+(wtMode===m?'#2e7d32':'#fff')+';color:'+(wtMode===m?'#fff':'#2e7d32');b.onclick=()=>{wtMode=m;legend();render()};wb.appendChild(b)});
+el.appendChild(wb);el.appendChild(bar);const nt=document.createElement('div');nt.style.cssText='width:100%;font-size:11px;color:#444;margin-bottom:2px';nt.textContent='Shape = group · Color = Zoho status. ● Not started  ■ Started  ◆ Inspections  ▲ Ops Completed';el.appendChild(nt);
 const mk=(label,color,n,isOff,toggle,cg2,zc,sk)=>{const lb=document.createElement('label');lb.className='chip';lb.style.cssText='background:'+color+';color:'+(zc?tcol(color):'#fff')+';border:2px solid #333;display:flex;align-items:center;gap:6px';
 const cb=document.createElement('input');cb.type='checkbox';cb.checked=!isOff;cb.setAttribute('aria-label','Show '+label);cb.onchange=()=>{toggle(cb.checked);lb.classList.toggle('off',!cb.checked);render()};
 lb.classList.toggle('off',isOff);lb.appendChild(cb);if(sk){const ic=document.createElement('span');ic.innerHTML=shp(sk,cg2?color:'#78909c',16,1);ic.style.display='inline-block';lb.appendChild(ic)}lb.appendChild(document.createTextNode(`${label} (${n})`));if(cg2){const t=document.createElement('span');t.innerHTML=tag(cg2);lb.appendChild(t)}el.appendChild(lb)};
-if(mode==='groups'){CATS.forEach(cg=>mk(cg.n,'#eceff1',P.filter(o=>o.cat===cg.k).length,off.has(cg.k),on=>on?off.delete(cg.k):off.add(cg.k),null,true,cg.k))}
-else{const st={};P.forEach(o=>{st[o.stage]=st[o.stage]||{n:0,cat:o.cat,color:o.color};st[o.stage].n++});Object.keys(st).sort().forEach(k=>mk(k,zcol(st[k].color),st[k].n,offS.has(k),on=>on?offS.delete(k):offS.add(k),catInfo(st[k].cat),true))}}
-async function load(){let j;try{const r=await fetch('projects.json?t='+Date.now());j=await r.json()}catch(e){const st=document.getElementById('stale');st.style.display='block';st.textContent='Warning: could not load data. Showing last loaded data, if any.';return}P=j.projects;P.forEach(o=>o.cat=catOf(o));window.GEN=j.generated;
+if(mode==='groups'){CATS.forEach(cg=>mk(cg.n,'#eceff1',P.filter(o=>o.cat===cg.k&&wtOk(o)).length,off.has(cg.k),on=>on?off.delete(cg.k):off.add(cg.k),null,true,cg.k))}
+else{const st={};P.filter(wtOk).forEach(o=>{st[o.stage]=st[o.stage]||{n:0,cat:o.cat,color:o.color};st[o.stage].n++});Object.keys(st).sort().forEach(k=>mk(k,zcol(st[k].color),st[k].n,offS.has(k),on=>on?offS.delete(k):offS.add(k),catInfo(st[k].cat),true))}}
+async function load(){let j;try{const r=await fetch('projects.json?t='+Date.now());j=await r.json()}catch(e){const st=document.getElementById('stale');st.style.display='block';st.textContent='Warning: could not load data. Showing last loaded data, if any.';return}P=j.projects;P.forEach(o=>{o.cat=catOf(o);o.wt=wtOf(o)});window.GEN=j.generated;
 document.getElementById('meta').textContent=`${P.length} open · ${P.filter(o=>o.lat).length} mapped · data updated ${j.generated} · updates about every 30 min on weekdays, 6am-8pm Mountain · page rechecks every 30 min`;const age=(Date.now()-new Date(String(j.generated).replace(/([+-]\d\d)(\d\d)$/,'$1:$2')).getTime())/60000;const st=document.getElementById('stale');
 if(isNaN(age)||age>30){st.style.display='block';st.textContent=isNaN(age)?'Warning: last-updated time unknown, data may be out of date.':`Warning: data is ${Math.round(age)} minutes old and may be out of date.`}else st.style.display='none';
 legend();render()}
