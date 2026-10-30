@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T11:04:05-0600",
+ "generated": "2026-10-30T11:35:44-0600",
  "projects": [
   {
    "prj": "PRJ-212",
@@ -140,7 +140,7 @@
    "name": "Martinez, Nancy - 12825 Giovanni Grajeda Avenue - 10/16/2026",
    "stage": "01. New",
    "color": "#F5EE76",
-   "group": "Ungrouped Projects",
+   "group": "EE Install",
    "address": "12825 Giovanni Grajeda Ave, Horizon City, TX 79928",
    "lat": 31.693827701878043,
    "lng": -106.24443177133799,
@@ -632,8 +632,8 @@
    "prj": "PRJ-167",
    "id": "1521004000000808007",
    "name": "Dominguez, Oscar - 5524 Milray Drive - 09/14/2026",
-   "stage": "02. Engineering Prep",
-   "color": "#75ADF0",
+   "stage": "04. Ready To Schedule",
+   "color": "#084A99",
    "group": "EE Install",
    "address": "5524 Milray Dr, El Paso, TX 79932",
    "lat": 31.858998,
