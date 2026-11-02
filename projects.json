@@ -1,6 +1,25 @@
 {
- "generated": "2026-11-02T15:17:35-0700",
+ "generated": "2026-11-02T16:21:51-0700",
  "projects": [
+  {
+   "prj": "PRJ-217",
+   "id": "1521004000001317229",
+   "name": "Good Samaritan Tower 2 - 7750 Lilac Way - 10/12/2026",
+   "stage": "01. New",
+   "color": "#F5EE76",
+   "group": "HVAC Install",
+   "address": "7750 Lilac Way, El Paso, TX 79915",
+   "lat": 31.738406707884305,
+   "lng": -106.35120749473572,
+   "source": "companycam",
+   "phone": "(805) 413-0659",
+   "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001317229/dashboard",
+   "companycam": "https://app.companycam.com/projects/115587268",
+   "fsm": null,
+   "fsm_wo": null,
+   "podium": null,
+   "outside": false
+  },
   {
    "prj": "PRJ-216",
    "id": "1521004000001317006",
