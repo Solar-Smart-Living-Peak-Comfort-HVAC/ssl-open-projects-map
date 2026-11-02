@@ -1,6 +1,25 @@
 {
- "generated": "2026-11-02T07:21:27-0700",
+ "generated": "2026-11-02T08:25:24-0700",
  "projects": [
+  {
+   "prj": "PRJ-216",
+   "id": "1521004000001317006",
+   "name": "McCloskey , Fred - 3700 Santa Minerva Avenue - 10/29/2026",
+   "stage": "01. New",
+   "color": "#F5EE76",
+   "group": "EE Install",
+   "address": "3696 Santa Minerva Ave, Las Cruces, NM 88012",
+   "lat": 32.39254043132695,
+   "lng": -106.7484275624156,
+   "source": "companycam",
+   "phone": "(724) 986-7896",
+   "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001317006/dashboard",
+   "companycam": "https://app.companycam.com/projects/117450454",
+   "fsm": null,
+   "fsm_wo": null,
+   "podium": null,
+   "outside": false
+  },
   {
    "prj": "PRJ-215",
    "id": "1521004000001299110",
