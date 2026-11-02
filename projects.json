@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T13:24:01-0700",
+ "generated": "2026-11-02T14:19:45-0700",
  "projects": [
   {
    "prj": "PRJ-216",
@@ -591,25 +591,6 @@
    "outside": false
   },
   {
-   "prj": "PRJ-174",
-   "id": "1521004000000909003",
-   "name": "Ruben Arvizu - 5305 Redman Rd - 9/17/26",
-   "stage": "Completed",
-   "color": "#183F17",
-   "group": "EE Install",
-   "address": "5305 Redman Rd, Las Cruces, NM 88011",
-   "lat": 32.2586831,
-   "lng": -106.7153843,
-   "source": "companycam",
-   "phone": null,
-   "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000000909003/dashboard",
-   "companycam": "https://app.companycam.com/projects/114497184",
-   "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003799779?tab=fsm_service_and_parts",
-   "fsm_wo": "26WO-2352",
-   "podium": null,
-   "outside": false
-  },
-  {
    "prj": "PRJ-172",
    "id": "1521004000000842137",
    "name": "Perea, Araceli - 1017 Lariat Street - 09/17/2026",
@@ -895,25 +876,6 @@
    "outside": false
   },
   {
-   "prj": "PRJ-154",
-   "id": "1521004000000721316",
-   "name": "Richardson, Elizabeth - 2601028PV/HDM",
-   "stage": "Completed",
-   "color": "#183F17",
-   "group": "EE Install",
-   "address": "6664 Tuscany Ridge Dr, El Paso, TX 79912",
-   "lat": 31.87182053009255,
-   "lng": -106.54115919023752,
-   "source": "companycam",
-   "phone": "(605) 957-5482",
-   "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000000721316/dashboard",
-   "companycam": "https://app.companycam.com/projects/112753682",
-   "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003629964?tab=Service_Appointments",
-   "fsm_wo": "26WO-2121",
-   "podium": null,
-   "outside": false
-  },
-  {
    "prj": "PRJ-153",
    "id": "1521004000000721223",
    "name": "Villalobos, Jose - 2601026PV/HDM",
@@ -1081,25 +1043,6 @@
    "companycam": "https://app.companycam.com/projects/113279031",
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003649325?tab=Service_Appointments",
    "fsm_wo": "26WO-2146",
-   "podium": null,
-   "outside": false
-  },
-  {
-   "prj": "PRJ-141",
-   "id": "1521004000000613627",
-   "name": "Estrada, Maria - 2601090R&R - 8/26/2026",
-   "stage": "Completed",
-   "color": "#183F17",
-   "group": "EE Install",
-   "address": "8909 Turrentine Dr, El Paso, TX 79925",
-   "lat": 31.7815099,
-   "lng": -106.3695761,
-   "source": "companycam",
-   "phone": "915-355-1446",
-   "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000000613627/dashboard",
-   "companycam": "https://app.companycam.com/projects/113395054",
-   "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003563184?tab=Service_Appointments",
-   "fsm_wo": "26WO-2023",
    "podium": null,
    "outside": false
   },
