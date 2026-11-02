@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T09:25:25-0700",
+ "generated": "2026-11-02T10:17:46-0700",
  "projects": [
   {
    "prj": "PRJ-216",
@@ -404,8 +404,8 @@
    "prj": "PRJ-185",
    "id": "1521004000001043278",
    "name": "Holdridge, Richard - 2601038BATT/EV - 10/6/206",
-   "stage": "09. Corrections",
-   "color": "#FF8819",
+   "stage": "10. OPS Completed",
+   "color": "#117385",
    "group": "EE Install",
    "address": "625 Solana Rd SW, Deming, NM 88030",
    "lat": 32.228828014793464,
@@ -1734,8 +1734,8 @@
    "prj": "PRJ-83",
    "id": "1521004000000412066",
    "name": "Norris, Cecillia - 2601077PV/HVAC - 7/30/2026",
-   "stage": "07. Installed",
-   "color": "#F9A2C5",
+   "stage": "10. OPS Completed",
+   "color": "#117385",
    "group": "EE + HVAC Install",
    "address": "1130 N Mesilla St, Las Cruces, NM 88005",
    "lat": 32.31745864158965,
