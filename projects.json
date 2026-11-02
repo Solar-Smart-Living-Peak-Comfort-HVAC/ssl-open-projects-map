@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T08:25:24-0700",
+ "generated": "2026-11-02T09:25:25-0700",
  "projects": [
   {
    "prj": "PRJ-216",
@@ -72,8 +72,8 @@
    "phone": "915-433-2807",
    "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001298049/dashboard",
    "companycam": "https://app.companycam.com/projects/117809703",
-   "fsm": null,
-   "fsm_wo": null,
+   "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004077961",
+   "fsm_wo": "26WO-2669",
    "podium": null,
    "outside": false
   },
@@ -100,8 +100,8 @@
    "prj": "PRJ-211",
    "id": "1521004000001278003",
    "name": "Umeh, Randle - 6123 Via De Los Arboles - 10/29/2026",
-   "stage": "04. Ready To Schedule",
-   "color": "#084A99",
+   "stage": "05. Scheduled",
+   "color": "#8737F0",
    "group": "EE Install",
    "address": "6123 Via De Los Arboles, El Paso, TX 79932",
    "lat": 31.8754183,
