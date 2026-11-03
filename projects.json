@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T08:24:32-0700",
+ "generated": "2026-11-03T09:24:28-0700",
  "projects": [
   {
    "prj": "PRJ-217",
@@ -499,8 +499,8 @@
    "prj": "PRJ-181",
    "id": "1521004000001017003",
    "name": "Pike , Andrew - 30 Peaceful Valley Road - 09/29/2026",
-   "stage": "01. New",
-   "color": "#F5EE76",
+   "stage": "02. Engineering Prep",
+   "color": "#75ADF0",
    "group": "EE Install",
    "address": "30 Peaceful Valley Rd, Alamogordo, NM 88310",
    "lat": 32.93877687884184,
