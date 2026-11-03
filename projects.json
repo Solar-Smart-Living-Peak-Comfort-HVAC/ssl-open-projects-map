@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T11:20:46-0700",
+ "generated": "2026-11-03T12:23:38-0700",
  "projects": [
   {
    "prj": "PRJ-217",
@@ -24,8 +24,8 @@
    "prj": "PRJ-216",
    "id": "1521004000001317006",
    "name": "McCloskey , Fred - 3700 Santa Minerva Avenue - 10/29/2026",
-   "stage": "01. New",
-   "color": "#F5EE76",
+   "stage": "03. Utility",
+   "color": "#F5D073",
    "group": "EE Install",
    "address": "3696 Santa Minerva Ave, Las Cruces, NM 88012",
    "lat": 32.39254043132695,
