@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T15:19:05-0700",
+ "generated": "2026-11-04T16:23:34-0700",
  "projects": [
   {
    "prj": "PRJ-217",
@@ -1251,7 +1251,7 @@
    "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000000520100/dashboard",
    "companycam": "https://app.companycam.com/projects/112236640",
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003522274?tab=Service_Appointments",
-   "fsm_wo": "26WO-1952",
+   "fsm_wo": "26WO-1952 26WO-2691",
    "podium": null,
    "outside": false
   },
@@ -1297,8 +1297,8 @@
    "prj": "PRJ-116",
    "id": "1521004000000512005",
    "name": "Elkington, Craig - 260060HVAC/MPU - 08/07/2026",
-   "stage": "10. Corrections",
-   "color": "#FF8819",
+   "stage": "11. Inspections",
+   "color": "#808080",
    "group": "HVAC Install",
    "address": "680 Abington Dr, El Paso, TX 79912",
    "lat": 31.852661283813696,
