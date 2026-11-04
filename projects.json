@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T14:24:44-0700",
+ "generated": "2026-11-04T15:19:05-0700",
  "projects": [
   {
    "prj": "PRJ-217",
@@ -176,8 +176,8 @@
    "prj": "PRJ-208",
    "id": "1521004000001219044",
    "name": "Sculthorpe , Douglas - 7314 Sidewinder Bend Drive - 10/22/2026",
-   "stage": "02. Engineering Prep",
-   "color": "#75ADF0",
+   "stage": "03. Utility",
+   "color": "#F5D073",
    "group": "EE Install",
    "address": "7314 Sidewinder Bnd Dr, El Paso, TX 79911",
    "lat": 31.895120498518374,
@@ -594,8 +594,8 @@
    "prj": "PRJ-176",
    "id": "1521004000000979009",
    "name": "Toole, Dan - 2367 Enchanted Knoll Lane - 09/23/2026",
-   "stage": "02. Engineering Prep",
-   "color": "#75ADF0",
+   "stage": "03. Utility",
+   "color": "#F5D073",
    "group": "EE Install",
    "address": "2367 Enchanted Knl Ln, El Paso, TX 79911",
    "lat": 31.920815889794547,
@@ -1156,7 +1156,7 @@
    "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000000532179/dashboard",
    "companycam": "https://app.companycam.com/projects/112362247",
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004010919",
-   "fsm_wo": "26WO-2617",
+   "fsm_wo": "26WO-2617 26WO-2688",
    "podium": null,
    "outside": true
   },
