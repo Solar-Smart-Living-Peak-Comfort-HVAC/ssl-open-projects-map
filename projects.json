@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T13:17:54-0700",
+ "generated": "2026-11-04T14:24:44-0700",
  "projects": [
   {
    "prj": "PRJ-217",
@@ -214,8 +214,8 @@
    "prj": "PRJ-206",
    "id": "1521004000001152091",
    "name": "Salgado, Jesus - 437 Valle del Mar Dr - 10/19/2026",
-   "stage": "01. New",
-   "color": "#F5EE76",
+   "stage": "03. Utility",
+   "color": "#F5D073",
    "group": "EE Install",
    "address": "437 Valle del Mar Dr, Socorro, TX 79927",
    "lat": 31.658756423915072,
@@ -224,8 +224,8 @@
    "phone": "(915) 229-9145",
    "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001152091/dashboard",
    "companycam": "https://app.companycam.com/projects/116856451",
-   "fsm": null,
-   "fsm_wo": null,
+   "fsm": "https://fsm.zoho.com/fsm/926955925#/work/work-orders/17339000004096232",
+   "fsm_wo": "26WO-2689",
    "podium": null,
    "outside": false
   },
