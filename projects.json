@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T07:24:55-0700",
+ "generated": "2026-11-05T08:22:05-0700",
  "projects": [
   {
    "prj": "PRJ-218",
@@ -1050,8 +1050,8 @@
    "prj": "PRJ-144",
    "id": "1521004000000640003",
    "name": "Lares, Alva - 2601091PV/MPU/HDM - 08/28/26",
-   "stage": "11. Inspections",
-   "color": "#808080",
+   "stage": "12. OPS Completed",
+   "color": "#117385",
    "group": "EE Install",
    "address": "548 Dorsey Dr, El Paso, TX 79912",
    "lat": 31.8504306,
