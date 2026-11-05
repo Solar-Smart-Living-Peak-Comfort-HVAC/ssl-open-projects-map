@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T10:24:29-0700",
+ "generated": "2026-11-05T11:35:24-0700",
  "projects": [
   {
    "prj": "PRJ-219",
@@ -186,8 +186,8 @@
    "phone": "(859) 630-8426",
    "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001257016/dashboard",
    "companycam": null,
-   "fsm": null,
-   "fsm_wo": null,
+   "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004116111?tab=Service_Appointments",
+   "fsm_wo": "26WO-2697",
    "podium": null,
    "outside": false
   },
@@ -423,8 +423,8 @@
    "prj": "PRJ-187",
    "id": "1521004000001087079",
    "name": "Diaz , Steven - 14928 William Meshel Drive - 10/07/2026",
-   "stage": "02. Engineering Prep",
-   "color": "#75ADF0",
+   "stage": "04. Ops Review",
+   "color": "#AB7D0C",
    "group": "EE Install",
    "address": "14928 William Meshel Dr, El Paso, TX",
    "lat": 31.7712046,
