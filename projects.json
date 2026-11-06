@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T16:21:15-0700",
+ "generated": "2026-11-05T17:20:57-0700",
  "projects": [
   {
    "prj": "PRJ-219",
@@ -461,8 +461,8 @@
    "prj": "PRJ-185",
    "id": "1521004000001043278",
    "name": "Holdridge, Richard - 2601038BATT/EV - 10/6/206",
-   "stage": "11. Inspections",
-   "color": "#808080",
+   "stage": "Completed",
+   "color": "#183F17",
    "group": "EE Install",
    "address": "625 Solana Rd SW, Deming, NM 88030",
    "lat": 32.228828014793464,
@@ -765,8 +765,8 @@
    "prj": "PRJ-166",
    "id": "1521004000000793006",
    "name": "Kim, Philip - 1505 Belview - 09/11/2026",
-   "stage": "10. Corrections",
-   "color": "#FF8819",
+   "stage": "12. OPS Completed",
+   "color": "#117385",
    "group": "EE Install",
    "address": "1505 Belview Ct, El Paso, TX 79912",
    "lat": 31.8561335,
