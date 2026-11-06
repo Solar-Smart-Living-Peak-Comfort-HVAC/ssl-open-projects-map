@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T08:02:43-0700",
+ "generated": "2026-11-06T08:22:29-0700",
  "projects": [
   {
    "prj": "PRJ-219",
@@ -784,8 +784,8 @@
    "prj": "PRJ-164",
    "id": "1521004000000790003",
    "name": "Chen, Jason - 126 Loma Parda - 09/12/2026",
-   "stage": "08. WO In Progress",
-   "color": "#BEE7BD",
+   "stage": "12. OPS Completed",
+   "color": "#117385",
    "group": "EE Install",
    "address": "126 Loma Parda Trl, Santa Teresa, NM 88008",
    "lat": 31.8522361,
