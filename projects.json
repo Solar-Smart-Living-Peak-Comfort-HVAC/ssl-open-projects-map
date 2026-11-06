@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T16:25:07-0600",
+ "generated": "2026-11-06T17:26:06-0600",
  "projects": [
   {
    "prj": "PRJ-219",
@@ -1620,8 +1620,8 @@
    "prj": "PRJ-95",
    "id": "1521004000000431129",
    "name": "Fernandez, Pablo - 260056HVAC/MPU- 7/27/2026",
-   "stage": "15. Hybrid",
-   "color": "#490521",
+   "stage": "07. Scheduled",
+   "color": "#8737F0",
    "group": "HVAC Install",
    "address": "3417 Thomason Ave, El Paso, TX 79904",
    "lat": 31.8313615,
