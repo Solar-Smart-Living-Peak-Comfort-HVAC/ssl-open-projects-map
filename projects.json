@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T10:17:26-0700",
+ "generated": "2026-11-06T11:25:06-0700",
  "projects": [
   {
    "prj": "PRJ-219",
@@ -178,7 +178,7 @@
    "name": "Marvin, Mark - 10046 Saragossa Ct - 10/28/2026",
    "stage": "01. New",
    "color": "#F5EE76",
-   "group": "Ungrouped Projects",
+   "group": "EE Install",
    "address": "10046 Saragossa Ct, Las Cruces, NM 88007",
    "lat": null,
    "lng": null,
