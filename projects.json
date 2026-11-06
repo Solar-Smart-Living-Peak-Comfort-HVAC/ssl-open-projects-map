@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T14:18:17-0600",
+ "generated": "2026-11-06T15:25:13-0600",
  "projects": [
   {
    "prj": "PRJ-219",
@@ -423,8 +423,8 @@
    "prj": "PRJ-187",
    "id": "1521004000001087079",
    "name": "Diaz , Steven - 14928 William Meshel Drive - 10/07/2026",
-   "stage": "04. Ops Review",
-   "color": "#AB7D0C",
+   "stage": "07. Scheduled",
+   "color": "#8737F0",
    "group": "EE Install",
    "address": "14928 William Meshel Dr, El Paso, TX",
    "lat": 31.7712046,
