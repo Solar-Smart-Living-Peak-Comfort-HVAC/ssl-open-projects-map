@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T09:22:20-0600",
+ "generated": "2026-11-09T10:16:22-0600",
  "projects": [
   {
    "prj": "PRJ-223",
@@ -43,8 +43,8 @@
    "prj": "PRJ-221",
    "id": "1521004000001402016",
    "name": "Soto, Tania - 9818 Isaac Dr - 11/15/2026",
-   "stage": "01. New",
-   "color": "#F5EE76",
+   "stage": "02. Engineering Prep",
+   "color": "#75ADF0",
    "group": "EE Install",
    "address": "9818 Isaac DR, El Paso, TX 79928",
    "lat": 31.6682113,
@@ -1259,8 +1259,8 @@
    "prj": "PRJ-131",
    "id": "1521004000000532132",
    "name": "Montrose, Gerard - 2601083PV/BATT/HDM - 08/11/2026",
-   "stage": "10. Corrections",
-   "color": "#FF8819",
+   "stage": "11. Inspections",
+   "color": "#808080",
    "group": "EE Install",
    "address": "6004 Ojo De Agua Dr, El Paso, TX 79912",
    "lat": 31.8624384,
