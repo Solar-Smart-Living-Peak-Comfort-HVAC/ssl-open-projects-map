@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T13:27:23-0600",
+ "generated": "2026-11-09T14:22:51-0600",
  "projects": [
   {
    "prj": "PRJ-223",
@@ -7,7 +7,7 @@
    "name": "Morlan, William - 4903 Briareus Drive - 11/06/2026",
    "stage": "01. New",
    "color": "#F5EE76",
-   "group": "Ungrouped Projects",
+   "group": "EE Install",
    "address": "4903 Briareus Dr, Las Cruces, NM 88005",
    "lat": 32.277264,
    "lng": -106.834812,
@@ -81,8 +81,8 @@
    "prj": "PRJ-218",
    "id": "1521004000001366006",
    "name": "Aguirre, Monica Anais - 12162 Royal Woods Drive - 09/21/2026",
-   "stage": "01. New",
-   "color": "#F5EE76",
+   "stage": "02. Engineering Prep",
+   "color": "#75ADF0",
    "group": "EE + HVAC Install",
    "address": "12162 Royal Woods Dr, El Paso, TX 79936",
    "lat": 31.779488899732808,
@@ -148,8 +148,8 @@
    "phone": "(940) 882-5796",
    "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001299110/dashboard",
    "companycam": "https://app.companycam.com/projects/115331717",
-   "fsm": null,
-   "fsm_wo": null,
+   "fsm": "https://fsm.zoho.com/fsm/868429994?ref_value=direct%3Afsm%7Cdirect%3Afsm%7Cbing%3Afsm%2Chttps%3A%2F%2Fwww.zoho.com%2Ffsm%2F%2C%2CDesktop%2Chttps%3A%2F%2Fwww.zoho.com%2Ffsm%2F#/tab/Work_Orders/17339000004121380?tab=Service_Appointments",
+   "fsm_wo": "26WO-2713",
    "podium": null,
    "outside": false
   },
