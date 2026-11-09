@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T15:24:16-0600",
+ "generated": "2026-11-09T16:18:30-0600",
  "projects": [
   {
    "prj": "PRJ-223",
@@ -1962,8 +1962,8 @@
    "prj": "PRJ-74",
    "id": "1521004000000411066",
    "name": "Shepard, Del - 2601073BATT/HVAC/HDM - 7/17/2026",
-   "stage": "08. WO In Progress",
-   "color": "#BEE7BD",
+   "stage": "12. OPS Completed",
+   "color": "#117385",
    "group": "EE + HVAC Install",
    "address": "2013 Pier Ln, El Paso, TX 79936",
    "lat": 31.7717499608721,
