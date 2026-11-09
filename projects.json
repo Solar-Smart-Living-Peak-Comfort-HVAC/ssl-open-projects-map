@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T10:16:22-0600",
+ "generated": "2026-11-09T11:19:45-0600",
  "projects": [
   {
    "prj": "PRJ-223",
@@ -53,8 +53,8 @@
    "phone": null,
    "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001402016/dashboard",
    "companycam": "https://app.companycam.com/projects/117809728",
-   "fsm": null,
-   "fsm_wo": null,
+   "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004119535?tab=Service_Appointments",
+   "fsm_wo": "26WO-2705",
    "podium": null,
    "outside": false
   },
@@ -271,8 +271,8 @@
    "prj": "PRJ-208",
    "id": "1521004000001219044",
    "name": "Sculthorpe , Douglas - 7314 Sidewinder Bend Drive - 10/22/2026",
-   "stage": "03. Utility",
-   "color": "#F5D073",
+   "stage": "04. Ops Review",
+   "color": "#AB7D0C",
    "group": "EE Install",
    "address": "7314 Sidewinder Bnd Dr, El Paso, TX 79911",
    "lat": 31.895120498518374,
@@ -955,8 +955,8 @@
    "prj": "PRJ-156",
    "id": "1521004000000735003",
    "name": "Gaussion, Jerry - 6317 La Posta - 09/04/2026",
-   "stage": "11. Inspections",
-   "color": "#808080",
+   "stage": "12. OPS Completed",
+   "color": "#117385",
    "group": "HVAC Install",
    "address": "6317 La Posta Dr, El Paso, TX 79912",
    "lat": 31.8587681,
