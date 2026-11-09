@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T16:18:30-0600",
+ "generated": "2026-11-09T17:21:15-0600",
  "projects": [
   {
    "prj": "PRJ-223",
@@ -1335,8 +1335,8 @@
    "prj": "PRJ-122",
    "id": "1521004000000520100",
    "name": "Vargas, Alberto (Dal-Tile) - 260065HVAC - 08/13/26",
-   "stage": "10. Corrections",
-   "color": "#FF8819",
+   "stage": "11. Inspections",
+   "color": "#808080",
    "group": "HVAC Install",
    "address": "12001 Railroad Dr, El Paso, TX 79934",
    "lat": 31.9544203,
@@ -1373,8 +1373,8 @@
    "prj": "PRJ-117",
    "id": "1521004000000512037",
    "name": "Richardson, Elizabeth - 260062HVAC - 8/7/2026",
-   "stage": "11. Inspections",
-   "color": "#808080",
+   "stage": "12. OPS Completed",
+   "color": "#117385",
    "group": "HVAC Install",
    "address": "6664 Tuscany Ridge Dr, El Paso, TX 79912",
    "lat": 31.87182053009255,
