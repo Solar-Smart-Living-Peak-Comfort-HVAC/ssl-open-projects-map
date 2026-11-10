@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T09:27:06-0600",
+ "generated": "2026-11-10T09:22:23-0700",
  "projects": [
   {
    "prj": "PRJ-224",
@@ -252,8 +252,8 @@
    "prj": "PRJ-210",
    "id": "1521004000001257016",
    "name": "Marvin, Mark - 10046 Saragossa Ct - 10/28/2026",
-   "stage": "01. New",
-   "color": "#F5EE76",
+   "stage": "08. WO In Progress",
+   "color": "#BEE7BD",
    "group": "EE Install",
    "address": "10046 Saragossa Ct, Las Cruces, NM 88007",
    "lat": 32.3077417,
@@ -2019,8 +2019,8 @@
    "prj": "PRJ-71",
    "id": "1521004000000403923",
    "name": "Kintner, Christopher - 2601062BATT - 6/19/2026",
-   "stage": "11. Inspections",
-   "color": "#808080",
+   "stage": "10. Corrections",
+   "color": "#FF8819",
    "group": "EE Install",
    "address": "6715 Desert Blossom Rd, Las Cruces, NM 88007",
    "lat": 32.321279499999996,
