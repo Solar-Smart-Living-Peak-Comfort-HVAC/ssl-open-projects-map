@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T19:22:44-0600",
+ "generated": "2026-11-10T08:17:58-0600",
  "projects": [
   {
    "prj": "PRJ-223",
@@ -708,8 +708,8 @@
    "prj": "PRJ-172",
    "id": "1521004000000842137",
    "name": "Perea, Araceli - 1017 Lariat Street - 09/17/2026",
-   "stage": "00. Hold",
-   "color": "#AB0C0C",
+   "stage": "04. Ops Review",
+   "color": "#AB7D0C",
    "group": "EE Install",
    "address": "1017 Lariat St, El Paso, TX 79915",
    "lat": 31.7524976,
