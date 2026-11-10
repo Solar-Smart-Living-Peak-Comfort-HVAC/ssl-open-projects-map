@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T13:22:29-0700",
+ "generated": "2026-11-10T14:19:28-0700",
  "projects": [
   {
    "prj": "PRJ-224",
@@ -271,8 +271,8 @@
    "prj": "PRJ-209",
    "id": "1521004000001240117",
    "name": "Danforth, Matthew - 13614 Gatton St. - 10/27/2026",
-   "stage": "01. New",
-   "color": "#F5EE76",
+   "stage": "02. Engineering Prep",
+   "color": "#75ADF0",
    "group": "EE Install",
    "address": "13614 Gatton St, El Paso, TX 79928",
    "lat": 31.7078504,
