@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T18:21:18-0700",
+ "generated": "2026-11-10T19:12:20-0700",
  "projects": [
   {
    "prj": "PRJ-224",
@@ -18,6 +18,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003305439?tab=Notes",
    "fsm_wo": "26WO-1611",
    "podium": null,
+   "jobType": "MPU",
    "outside": false
   },
   {
@@ -37,6 +38,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004119744?tab=Service_Appointments",
    "fsm_wo": "26WO-2716",
    "podium": null,
+   "jobType": "EV",
    "outside": false
   },
   {
@@ -56,6 +58,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003975136?tab=Notes",
    "fsm_wo": "26WO-2548",
    "podium": null,
+   "jobType": "z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -75,6 +78,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004119535?tab=Service_Appointments",
    "fsm_wo": "26WO-2705",
    "podium": null,
+   "jobType": "R&R + z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -94,6 +98,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "MPU + HVAC",
    "outside": true
   },
   {
@@ -113,6 +118,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004127017?tab=Service_Appointments",
    "fsm_wo": "26WO-2710",
    "podium": null,
+   "jobType": "PV + HVAC",
    "outside": false
   },
   {
@@ -132,6 +138,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994?ref_value=direct%3Afsm%7Cdirect%3Afsm%7Cbing%3Afsm%2Chttps%3A%2F%2Fwww.zoho.com%2Ffsm%2F%2C%2CDesktop%2Chttps%3A%2F%2Fwww.zoho.com%2Ffsm%2F#/tab/Work_Orders/17339000004116201?tab=Service_Appointments",
    "fsm_wo": "26WO-2698",
    "podium": null,
+   "jobType": "HVAC",
    "outside": false
   },
   {
@@ -151,6 +158,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "EV",
    "outside": false
   },
   {
@@ -170,6 +178,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994?ref_value=direct%3Afsm%7Cdirect%3Afsm%7Cbing%3Afsm%2Chttps%3A%2F%2Fwww.zoho.com%2Ffsm%2F%2C%2CDesktop%2Chttps%3A%2F%2Fwww.zoho.com%2Ffsm%2F#/tab/Work_Orders/17339000004121380?tab=Service_Appointments",
    "fsm_wo": "26WO-2713",
    "podium": null,
+   "jobType": "HVAC",
    "outside": false
   },
   {
@@ -189,6 +198,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003798427?tab=Service_Appointments",
    "fsm_wo": "26WO-2355",
    "podium": null,
+   "jobType": "R&R + z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -208,6 +218,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004077961",
    "fsm_wo": "26WO-2669",
    "podium": null,
+   "jobType": "PV",
    "outside": false
   },
   {
@@ -227,6 +238,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "EV",
    "outside": false
   },
   {
@@ -246,6 +258,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004069332",
    "fsm_wo": "26WO-2651",
    "podium": null,
+   "jobType": "EV",
    "outside": false
   },
   {
@@ -265,6 +278,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004116111?tab=Service_Appointments",
    "fsm_wo": "26WO-2697",
    "podium": null,
+   "jobType": "R&R",
    "outside": false
   },
   {
@@ -284,6 +298,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004134147?tab=Service_Appointments",
    "fsm_wo": "26WO-2723",
    "podium": null,
+   "jobType": "EV + PV",
    "outside": false
   },
   {
@@ -303,6 +318,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004010314",
    "fsm_wo": "26WO-2567",
    "podium": null,
+   "jobType": "PV + ESS + S.I. Total + z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -322,6 +338,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": null,
    "outside": false
   },
   {
@@ -341,6 +358,7 @@
    "fsm": "https://fsm.zoho.com/fsm/926955925#/work/work-orders/17339000004096232",
    "fsm_wo": "26WO-2689",
    "podium": null,
+   "jobType": "ESS",
    "outside": false
   },
   {
@@ -360,6 +378,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "S. I. Solar",
    "outside": false
   },
   {
@@ -379,6 +398,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "MPU",
    "outside": false
   },
   {
@@ -398,6 +418,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003918188",
    "fsm_wo": "26WO-2524",
    "podium": null,
+   "jobType": "PV + R&R",
    "outside": false
   },
   {
@@ -417,6 +438,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "PV",
    "outside": false
   },
   {
@@ -436,6 +458,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003891275",
    "fsm_wo": "26WO-2489",
    "podium": null,
+   "jobType": "R&R",
    "outside": false
   },
   {
@@ -455,6 +478,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": null,
    "outside": false
   },
   {
@@ -474,6 +498,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": null,
    "outside": false
   },
   {
@@ -493,6 +518,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": null,
    "outside": false
   },
   {
@@ -512,6 +538,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004116091?tab=Service_Appointments",
    "fsm_wo": "26WO-2695",
    "podium": null,
+   "jobType": "PV + ESS",
    "outside": false
   },
   {
@@ -531,6 +558,7 @@
    "fsm": null,
    "fsm_wo": "26WO-2514",
    "podium": null,
+   "jobType": "JB Warranty + HVAC",
    "outside": false
   },
   {
@@ -550,6 +578,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994?userAdd=true#/tab/Work_Orders?page=1&per_page=100&custom_view=17339000000113801",
    "fsm_wo": null,
    "podium": null,
+   "jobType": "MPU",
    "outside": true
   },
   {
@@ -569,6 +598,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003918205",
    "fsm_wo": "26WO-2525",
    "podium": null,
+   "jobType": "EV + PV",
    "outside": false
   },
   {
@@ -588,6 +618,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003838066",
    "fsm_wo": "26WO-2431",
    "podium": null,
+   "jobType": "MPU + PV + ESS + S.I. Total",
    "outside": false
   },
   {
@@ -607,6 +638,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003838066",
    "fsm_wo": "26WO-2431",
    "podium": null,
+   "jobType": "JB Warranty + HVAC",
    "outside": false
   },
   {
@@ -626,6 +658,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003828126?tab=fsm_service_and_parts",
    "fsm_wo": "26WO-2417",
    "podium": null,
+   "jobType": "MPU + ESS + S. I. Batt",
    "outside": true
   },
   {
@@ -645,6 +678,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003836279",
    "fsm_wo": "26WO-2429",
    "podium": null,
+   "jobType": "MPU + HVAC",
    "outside": true
   },
   {
@@ -664,6 +698,7 @@
    "fsm": null,
    "fsm_wo": "26WO-2351",
    "podium": null,
+   "jobType": "HVAC",
    "outside": false
   },
   {
@@ -683,6 +718,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "Water Filter + Undersink RO",
    "outside": false
   },
   {
@@ -702,6 +738,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003773400?tab=Service_Appointments",
    "fsm_wo": "26WO-2325",
    "podium": null,
+   "jobType": "S. I. Solar + PV + HVAC",
    "outside": false
   },
   {
@@ -721,6 +758,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003899319",
    "fsm_wo": "26WO-2497",
    "podium": null,
+   "jobType": "S. I. Solar + PV",
    "outside": false
   },
   {
@@ -740,6 +778,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "MPU",
    "outside": false
   },
   {
@@ -759,6 +798,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003798454?tab=Service_Appointments",
    "fsm_wo": "26WO-2357",
    "podium": null,
+   "jobType": "S. I. Solar + PV + HVAC",
    "outside": false
   },
   {
@@ -778,6 +818,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003775613?tab=Service_Appointments",
    "fsm_wo": "26WO-2329",
    "podium": null,
+   "jobType": "HVAC",
    "outside": false
   },
   {
@@ -797,6 +838,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003776089?tab=Service_Appointments",
    "fsm_wo": "26WO-2314",
    "podium": null,
+   "jobType": "PV + ESS + S.I. Total + z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -816,6 +858,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003771253?tab=Service_Appointments",
    "fsm_wo": "26WO-2317",
    "podium": null,
+   "jobType": "EV + ESS",
    "outside": false
   },
   {
@@ -835,6 +878,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003776074?tab=Service_Appointments",
    "fsm_wo": "26WO-2313",
    "podium": null,
+   "jobType": "PV + ESS",
    "outside": false
   },
   {
@@ -854,6 +898,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003799538",
    "fsm_wo": "26WO-2349",
    "podium": null,
+   "jobType": "EV + PV + ESS + S.I. Total",
    "outside": false
   },
   {
@@ -873,6 +918,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003771285?tab=Service_Appointments",
    "fsm_wo": "26WO-2318",
    "podium": null,
+   "jobType": "EV",
    "outside": false
   },
   {
@@ -892,6 +938,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003710377?tab=Service_Appointments",
    "fsm_wo": "26WO-2249",
    "podium": null,
+   "jobType": "MPU + HVAC + z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -911,6 +958,7 @@
    "fsm": null,
    "fsm_wo": "26WO-2246",
    "podium": null,
+   "jobType": "MPU + JB Warranty + HVAC",
    "outside": false
   },
   {
@@ -930,6 +978,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003666887?tab=Service_Appointments",
    "fsm_wo": "26WO-2223",
    "podium": null,
+   "jobType": "HVAC",
    "outside": false
   },
   {
@@ -949,6 +998,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003700791?tab=Service_Appointments",
    "fsm_wo": "26WO-2240a",
    "podium": null,
+   "jobType": "ESS + z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -968,6 +1018,7 @@
    "fsm": null,
    "fsm_wo": "26WO-2164",
    "podium": null,
+   "jobType": "HVAC",
    "outside": false
   },
   {
@@ -987,6 +1038,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003635713?tab=Service_Appointments",
    "fsm_wo": "26WO-2137",
    "podium": null,
+   "jobType": "HVAC",
    "outside": false
   },
   {
@@ -1006,6 +1058,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "PV",
    "outside": false
   },
   {
@@ -1025,6 +1078,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003625904?tab=Service_Appointments",
    "fsm_wo": "26WO-2117, 26WO-2477",
    "podium": null,
+   "jobType": "PV",
    "outside": false
   },
   {
@@ -1044,6 +1098,7 @@
    "fsm": null,
    "fsm_wo": "26WO-2353",
    "podium": null,
+   "jobType": "JB Warranty + HVAC",
    "outside": false
   },
   {
@@ -1063,6 +1118,7 @@
    "fsm": null,
    "fsm_wo": "26WO-2113",
    "podium": null,
+   "jobType": "HVAC",
    "outside": false
   },
   {
@@ -1082,6 +1138,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "PV + ESS + z. Other (Include in Notes)",
    "outside": true
   },
   {
@@ -1101,6 +1158,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003603434?tab=Service_Appointments",
    "fsm_wo": "26WO-2058",
    "podium": null,
+   "jobType": "ESS",
    "outside": false
   },
   {
@@ -1120,6 +1178,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003744008?tab=Service_Appointments",
    "fsm_wo": "26WO-2274",
    "podium": null,
+   "jobType": "PV + ESS",
    "outside": false
   },
   {
@@ -1139,6 +1198,7 @@
    "fsm": null,
    "fsm_wo": "26WO-2100",
    "podium": null,
+   "jobType": "JB Warranty + HVAC",
    "outside": false
   },
   {
@@ -1158,6 +1218,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003730013?tab=Service_Appointments",
    "fsm_wo": "26WO-2268",
    "podium": null,
+   "jobType": "MPU + PV",
    "outside": false
   },
   {
@@ -1177,6 +1238,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003649325?tab=Service_Appointments",
    "fsm_wo": "26WO-2146",
    "podium": null,
+   "jobType": "HVAC",
    "outside": false
   },
   {
@@ -1196,6 +1258,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003564072?tab=Service_Appointments",
    "fsm_wo": "26WO-2020",
    "podium": null,
+   "jobType": "PV",
    "outside": false
   },
   {
@@ -1215,6 +1278,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003542300?tab=Service_Appointments",
    "fsm_wo": "26WO-1991",
    "podium": null,
+   "jobType": "HVAC",
    "outside": false
   },
   {
@@ -1234,6 +1298,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003576735?tab=Service_Appointments",
    "fsm_wo": "26WO-2042",
    "podium": null,
+   "jobType": "PV",
    "outside": false
   },
   {
@@ -1253,6 +1318,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003632320?tab=Service_Appointments",
    "fsm_wo": "26WO-2116",
    "podium": null,
+   "jobType": "MPU + PV",
    "outside": false
   },
   {
@@ -1272,6 +1338,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004010919",
    "fsm_wo": "26WO-2617 26WO-2688",
    "podium": null,
+   "jobType": "ESS",
    "outside": true
   },
   {
@@ -1291,6 +1358,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003522208?tab=Service_Appointments",
    "fsm_wo": "26WO-1950",
    "podium": null,
+   "jobType": "PV + ESS",
    "outside": false
   },
   {
@@ -1310,6 +1378,7 @@
    "fsm": null,
    "fsm_wo": "26WO-2110",
    "podium": null,
+   "jobType": null,
    "outside": false
   },
   {
@@ -1329,6 +1398,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "EV",
    "outside": false
   },
   {
@@ -1348,6 +1418,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003490379?tab=Service_Appointments",
    "fsm_wo": "26WO-1898",
    "podium": null,
+   "jobType": "EV",
    "outside": false
   },
   {
@@ -1367,6 +1438,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003522274?tab=Service_Appointments",
    "fsm_wo": "26WO-1952 26WO-2691",
    "podium": null,
+   "jobType": null,
    "outside": false
   },
   {
@@ -1386,6 +1458,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003520226?tab=Service_Appointments",
    "fsm_wo": "26WO-1953",
    "podium": null,
+   "jobType": null,
    "outside": false
   },
   {
@@ -1405,6 +1478,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003486526?tab=Service_Appointments",
    "fsm_wo": "26WO-1900",
    "podium": null,
+   "jobType": "JB Warranty + HVAC",
    "outside": false
   },
   {
@@ -1424,6 +1498,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003487508?tab=Service_Appointments",
    "fsm_wo": "26WO-1899",
    "podium": null,
+   "jobType": "MPU + HVAC",
    "outside": false
   },
   {
@@ -1443,6 +1518,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003417247?tab=Service_Appointments",
    "fsm_wo": "26WO-1424-SVC | 26WO-1798",
    "podium": null,
+   "jobType": "z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -1462,6 +1538,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "Electrical Work",
    "outside": false
   },
   {
@@ -1481,6 +1558,7 @@
    "fsm": null,
    "fsm_wo": "26WO-1382-SVC",
    "podium": null,
+   "jobType": "z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -1500,6 +1578,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003531360?tab=Service_Appointments",
    "fsm_wo": "26WO-1976",
    "podium": null,
+   "jobType": "PV",
    "outside": false
   },
   {
@@ -1519,6 +1598,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "EV + Electrical Work",
    "outside": false
   },
   {
@@ -1538,6 +1618,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "EV",
    "outside": false
   },
   {
@@ -1557,6 +1638,7 @@
    "fsm": null,
    "fsm_wo": null,
    "podium": null,
+   "jobType": "EV + Electrical Work",
    "outside": false
   },
   {
@@ -1576,6 +1658,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003513124?tab=Service_Appointments",
    "fsm_wo": "26WO-1933",
    "podium": null,
+   "jobType": "z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -1595,6 +1678,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003466457?tab=Service_Appointments",
    "fsm_wo": "26WO-1867",
    "podium": null,
+   "jobType": "z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -1614,6 +1698,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003348288?tab=Service_Appointments",
    "fsm_wo": "26WO-1671",
    "podium": null,
+   "jobType": "HVAC",
    "outside": false
   },
   {
@@ -1633,6 +1718,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003751001?tab=Service_Appointments",
    "fsm_wo": "26WO-2276",
    "podium": null,
+   "jobType": "EV + MPU + PV + ESS",
    "outside": false
   },
   {
@@ -1652,6 +1738,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003751520?tab=Service_Appointments",
    "fsm_wo": "26WO-2283",
    "podium": null,
+   "jobType": "ESS",
    "outside": false
   },
   {
@@ -1671,6 +1758,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003242857?tab=Service_Appointments",
    "fsm_wo": "26WO-1495",
    "podium": null,
+   "jobType": "PV",
    "outside": false
   },
   {
@@ -1690,6 +1778,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003248327?tab=Service_Appointments",
    "fsm_wo": "26WO-1469",
    "podium": null,
+   "jobType": "MPU + ESS",
    "outside": false
   },
   {
@@ -1709,6 +1798,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003463028?tab=Service_Appointments",
    "fsm_wo": "26WO-1858",
    "podium": null,
+   "jobType": "MPU + HVAC",
    "outside": false
   },
   {
@@ -1728,6 +1818,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003448833?tab=Service_Appointments",
    "fsm_wo": "26WO-1850",
    "podium": null,
+   "jobType": "EV",
    "outside": true
   },
   {
@@ -1747,6 +1838,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003394193?tab=Service_Appointments",
    "fsm_wo": "26WO-1770",
    "podium": null,
+   "jobType": "HVAC",
    "outside": false
   },
   {
@@ -1766,6 +1858,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003279849?tab=Service_Appointments",
    "fsm_wo": "HVAC: 26WO-1545 & E&E: 26WO-HVAC: 26WO-1545 | E&E: 26WO-1564",
    "podium": null,
+   "jobType": "EV + PV + ESS + HVAC + z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -1785,6 +1878,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003343407?tab=Service_Appointments",
    "fsm_wo": "HVAC: 26WO-1731 | E&E: 26WO-1670 26WO-2682",
    "podium": null,
+   "jobType": "HVAC + z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -1804,6 +1898,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003284600?tab=Service_Appointments",
    "fsm_wo": "26WO-1559",
    "podium": null,
+   "jobType": "HVAC",
    "outside": false
   },
   {
@@ -1823,6 +1918,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003541042?tab=Service_Appointments",
    "fsm_wo": "HVAC: 26WO-1869 | E&E: 26WO-1986",
    "podium": null,
+   "jobType": "PV + HVAC",
    "outside": false
   },
   {
@@ -1842,6 +1938,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003514171?tab=Service_Appointments",
    "fsm_wo": "26WO-1940",
    "podium": null,
+   "jobType": "PV + ESS",
    "outside": false
   },
   {
@@ -1861,6 +1958,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003258519?tab=Service_Appointments",
    "fsm_wo": "26WO-1512  26WO-2703",
    "podium": null,
+   "jobType": "MPU + PV",
    "outside": false
   },
   {
@@ -1880,6 +1978,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003764788?tab=Service_Appointments",
    "fsm_wo": "26WO-2303",
    "podium": null,
+   "jobType": "PV",
    "outside": false
   },
   {
@@ -1899,6 +1998,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003354082?tab=Service_Appointments",
    "fsm_wo": "26WO-1675",
    "podium": null,
+   "jobType": "PV",
    "outside": false
   },
   {
@@ -1918,6 +2018,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003242917?tab=Service_Appointments",
    "fsm_wo": "26WO-1502",
    "podium": null,
+   "jobType": "PV + z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -1937,6 +2038,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003647541?tab=Service_Appointments",
    "fsm_wo": "26WO-2144",
    "podium": null,
+   "jobType": "PV",
    "outside": false
   },
   {
@@ -1956,6 +2058,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003242944?tab=Service_Appointments",
    "fsm_wo": "26WO-1509",
    "podium": null,
+   "jobType": "MPU + ESS",
    "outside": false
   },
   {
@@ -1975,6 +2078,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003359906?tab=Service_Appointments",
    "fsm_wo": "26WO-1725",
    "podium": null,
+   "jobType": "MPU + PV",
    "outside": false
   },
   {
@@ -1994,6 +2098,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003364793?tab=Service_Appointments",
    "fsm_wo": "HVAC: 26WO-1814 | E&E: 26WO-1724 26WO-2286",
    "podium": null,
+   "jobType": "MPU + ESS + HVAC",
    "outside": false
   },
   {
@@ -2013,6 +2118,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003263151?tab=Service_Appointments",
    "fsm_wo": "26WO-1507",
    "podium": null,
+   "jobType": "PV + ESS",
    "outside": false
   },
   {
@@ -2032,6 +2138,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003263138?tab=Service_Appointments",
    "fsm_wo": "26WO-1501",
    "podium": null,
+   "jobType": "ESS + z. Other (Include in Notes)",
    "outside": false
   },
   {
@@ -2051,6 +2158,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003382034?tab=Service_Appointments",
    "fsm_wo": "26WO-1735",
    "podium": null,
+   "jobType": "PV",
    "outside": false
   },
   {
@@ -2070,6 +2178,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003284693?tab=Service_Appointments",
    "fsm_wo": "HVAC: 26WO-1562 | E&E: 26WO-1565",
    "podium": null,
+   "jobType": "PV + HVAC",
    "outside": false
   },
   {
@@ -2089,6 +2198,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003242956?tab=Service_Appointments",
    "fsm_wo": "26WO-1510",
    "podium": null,
+   "jobType": "MPU + PV",
    "outside": false
   },
   {
@@ -2108,6 +2218,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003258503?tab=Service_Appointments",
    "fsm_wo": "26WO-1508",
    "podium": null,
+   "jobType": "ESS",
    "outside": false
   },
   {
@@ -2127,6 +2238,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003242844?tab=Service_Appointments",
    "fsm_wo": "26WO-1494",
    "podium": null,
+   "jobType": "ESS + Water Filter",
    "outside": false
   },
   {
@@ -2146,6 +2258,7 @@
    "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003397036?tab=Service_Appointments",
    "fsm_wo": "26WO-1759",
    "podium": null,
+   "jobType": "PV",
    "outside": false
   }
  ]

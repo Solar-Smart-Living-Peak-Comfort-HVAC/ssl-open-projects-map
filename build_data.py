@@ -35,10 +35,14 @@ for p in L:
   st=p.get('status') or {}
   fl=p.get('fsm_link') or ''; fl=fl if 'fsm.zoho.com' in fl else None
   wo=p.get('fsm_wo_number'); wo=wo if wo and wo.strip('-') else None
+  sp=p.get('sold_products') or []
+  if isinstance(sp,str): sp=[x.strip() for x in re.split(r'[,+/]',sp) if x.strip()]
+  jobType=' + '.join(str(x).strip() for x in sp if str(x).strip()) or None
   out.append(dict(prj=p.get('key'),id=p['id'],name=re.sub(r'\s+',' ',p['name']),stage=st.get('name',''),color=st.get('color_hexcode') or '#999',
     group=grp,address=addr,lat=lat,lng=lng,source=src,phone=phone,
     zoho=f"https://projects.zoho.com/portal/sslproject1#project/{p['id']}/dashboard",
     companycam=f"https://app.companycam.com/projects/{ccid}" if ccid else None,fsm=fl,fsm_wo=wo,podium=None,
+    jobType=jobType,
     outside=bool(lat and not (31.3<=lat<=32.6 and -107.5<=lng<=-105.8))))
 json.dump({'generated':time.strftime('%Y-%m-%dT%H:%M:%S%z'),'projects':out},open('/workspace/ssl-map/projects.json','w'),indent=1)
 import collections;print(len(out),sum(1 for o in out if o['lat']),sum(1 for o in out if not o['address']),sum(1 for o in out if o['address'] and not o['lat']),sum(o['outside'] for o in out),sum(1 for o in out if o['phone']))
