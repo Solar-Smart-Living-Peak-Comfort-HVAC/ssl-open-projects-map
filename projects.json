@@ -1,6 +1,26 @@
 {
- "generated": "2026-11-11T08:21:42-0700",
+ "generated": "2026-11-11T09:25:12-0700",
  "projects": [
+  {
+   "prj": "PRJ-225",
+   "id": "1521004000001436006",
+   "name": "Olivares, Christopher - 386 Morning Star Dr - 11/04/2026",
+   "stage": "01. New",
+   "color": "#F5EE76",
+   "group": "EE Install",
+   "address": "386 Morning Star Dr, El Paso, TX 79912",
+   "lat": 31.827132327658887,
+   "lng": -106.50798881426454,
+   "source": "companycam",
+   "phone": "(915) 276-4336",
+   "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001436006/dashboard",
+   "companycam": "https://app.companycam.com/projects/114608184",
+   "fsm": null,
+   "fsm_wo": null,
+   "podium": null,
+   "jobType": "PV + ESS",
+   "outside": false
+  },
   {
    "prj": "PRJ-224",
    "id": "1521004000001418003",
@@ -365,8 +385,8 @@
    "prj": "PRJ-205",
    "id": "1521004000001152057",
    "name": "Martinez, Nancy - 12825 Giovanni Grajeda Avenue - 10/16/2026",
-   "stage": "02. Engineering Prep",
-   "color": "#75ADF0",
+   "stage": "03. Utility",
+   "color": "#F5D073",
    "group": "EE Install",
    "address": "12825 Giovanni Grajeda Ave, Horizon City, TX 79928",
    "lat": 31.693827701878043,
