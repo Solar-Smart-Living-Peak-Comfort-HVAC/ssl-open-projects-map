@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T15:20:12-0700",
+ "generated": "2026-11-11T16:26:06-0700",
  "projects": [
   {
    "prj": "PRJ-225",
@@ -2085,8 +2085,8 @@
    "prj": "PRJ-75",
    "id": "1521004000000411126",
    "name": "Jeddery, Jose - 2601074PV/MPU/HDM - 7/14/2026",
-   "stage": "07. Scheduled",
-   "color": "#8737F0",
+   "stage": "11. Inspections",
+   "color": "#808080",
    "group": "EE Install",
    "address": "6420 Pino Real Dr, El Paso, TX 79912",
    "lat": 31.8446391,
