@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T11:28:49-0700",
+ "generated": "2026-11-12T12:26:08-0700",
  "projects": [
   {
    "prj": "PRJ-225",
@@ -1865,8 +1865,8 @@
    "prj": "PRJ-86",
    "id": "1521004000000415127",
    "name": "Winston, John - 260021HVAC - 4/28/2026",
-   "stage": "08. WO In Progress",
-   "color": "#BEE7BD",
+   "stage": "09. Installed",
+   "color": "#F9A2C5",
    "group": "EE + HVAC Install",
    "address": "120 W Castellano Dr, El Paso, TX 79912",
    "lat": 31.8068409,
