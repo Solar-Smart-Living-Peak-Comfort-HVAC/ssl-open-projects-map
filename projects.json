@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T08:22:52-0700",
+ "generated": "2026-11-12T09:33:04-0700",
  "projects": [
   {
    "prj": "PRJ-225",
@@ -1605,8 +1605,8 @@
    "prj": "PRJ-109",
    "id": "1521004000000462213",
    "name": "260005COMM - Las Cruces Natatorium",
-   "stage": "00. Hold",
-   "color": "#AB0C0C",
+   "stage": "08. WO In Progress",
+   "color": "#BEE7BD",
    "group": "Commercial",
    "address": "1401 E Hadley Ave, Las Cruces, NM 88001",
    "lat": 32.316826999999996,
