@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T18:23:49-0700",
+ "generated": "2026-11-12T07:27:42-0700",
  "projects": [
   {
    "prj": "PRJ-225",
@@ -1422,26 +1422,6 @@
    "outside": false
   },
   {
-   "prj": "PRJ-124",
-   "id": "1521004000000520168",
-   "name": "Lueke, Stephen - 260026EV - 07/27/26",
-   "stage": "14. Accounting",
-   "color": "#5DC35A",
-   "group": "EE Install",
-   "address": "6668 Vista Hermosa, Las Cruces, Nm 88007",
-   "lat": 32.29773467545229,
-   "lng": -106.81169506649124,
-   "source": "companycam",
-   "phone": "(818) 807-2147",
-   "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000000520168/dashboard",
-   "companycam": "https://app.companycam.com/projects/112111008",
-   "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003490379?tab=Service_Appointments",
-   "fsm_wo": "26WO-1898",
-   "podium": null,
-   "jobType": "EV",
-   "outside": false
-  },
-  {
    "prj": "PRJ-122",
    "id": "1521004000000520100",
    "name": "Vargas, Alberto (Dal-Tile) - 260065HVAC - 08/13/26",
@@ -1805,8 +1785,8 @@
    "prj": "PRJ-95",
    "id": "1521004000000431129",
    "name": "Fernandez, Pablo - 260056HVAC/MPU- 7/27/2026",
-   "stage": "07. Scheduled",
-   "color": "#8737F0",
+   "stage": "11. Inspections",
+   "color": "#808080",
    "group": "HVAC Install",
    "address": "3417 Thomason Ave, El Paso, TX 79904",
    "lat": 31.8313615,
