@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T09:33:04-0700",
+ "generated": "2026-11-12T10:24:11-0700",
  "projects": [
   {
    "prj": "PRJ-225",
@@ -325,8 +325,8 @@
    "prj": "PRJ-208",
    "id": "1521004000001219044",
    "name": "Sculthorpe , Douglas - 7314 Sidewinder Bend Drive - 10/22/2026",
-   "stage": "03. Utility",
-   "color": "#F5D073",
+   "stage": "04. Ops Review",
+   "color": "#AB7D0C",
    "group": "EE Install",
    "address": "7314 Sidewinder Bnd Dr, El Paso, TX 79911",
    "lat": 31.895120498518374,
@@ -1345,8 +1345,8 @@
    "prj": "PRJ-132",
    "id": "1521004000000532179",
    "name": "Pate, Daniel - 2601084BATT - 8/15/2026",
-   "stage": "08. WO In Progress",
-   "color": "#BEE7BD",
+   "stage": "11. Inspections",
+   "color": "#808080",
    "group": "EE Install",
    "address": "83 Diablo Dr, Alamogordo, NM 88310",
    "lat": 32.8288655,
