@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T12:26:08-0700",
+ "generated": "2026-11-12T13:24:13-0700",
  "projects": [
   {
    "prj": "PRJ-225",
@@ -905,8 +905,8 @@
    "prj": "PRJ-166",
    "id": "1521004000000793006",
    "name": "Kim, Philip - 1505 Belview - 09/11/2026",
-   "stage": "10. Corrections",
-   "color": "#FF8819",
+   "stage": "12. OPS Completed",
+   "color": "#117385",
    "group": "EE Install",
    "address": "1505 Belview Ct, El Paso, TX 79912",
    "lat": 31.8561335,
