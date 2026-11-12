@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T10:24:11-0700",
+ "generated": "2026-11-12T11:28:49-0700",
  "projects": [
   {
    "prj": "PRJ-225",
@@ -885,8 +885,8 @@
    "prj": "PRJ-167",
    "id": "1521004000000808007",
    "name": "Dominguez, Oscar - 5524 Milray Drive - 09/14/2026",
-   "stage": "07. Scheduled",
-   "color": "#8737F0",
+   "stage": "08. WO In Progress",
+   "color": "#BEE7BD",
    "group": "EE Install",
    "address": "5524 Milray Dr, El Paso, TX 79932",
    "lat": 31.858998,
