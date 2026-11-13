@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T17:24:03-0700",
+ "generated": "2026-11-12T18:25:11-0700",
  "projects": [
   {
    "prj": "PRJ-225",
@@ -2225,8 +2225,8 @@
    "prj": "PRJ-65",
    "id": "1521004000000360681",
    "name": "Verlander, John - 2601057BATT + 2601060WATER - 6/11/2026",
-   "stage": "08. WO In Progress",
-   "color": "#BEE7BD",
+   "stage": "11. Inspections",
+   "color": "#808080",
    "group": "EE Install",
    "address": "4710 Rosinante Rd, El Paso, TX 79922",
    "lat": 31.825587634370216,
