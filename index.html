@@ -34,8 +34,10 @@ const map=L.map('map',{layers:[sat,lbl],tap:true}).setView([31.95,-106.5],9);
 L.control.layers({'Satellite':L.layerGroup([sat,lbl]),'Streets':street}).addTo(map);
 const CATS=[{k:'ns',n:'Not started',c:'#f9a825'},{k:'st',n:'Started',c:'#1e88e5'},{k:'in',n:'Inspections',c:'#8e24aa'},{k:'co',n:'Ops Completed',c:'#2e7d32'}];
 function catOf(o){const m=/^\s*(\d+)/.exec(o.stage||'');const n=m?(m[1].length===3&&m[1][0]==='0'?parseInt(m[1],10)/10:parseInt(m[1],10)):null;const nm=(o.stage||'').toLowerCase();
-if(nm==='completed'||nm.includes('collect')||nm.includes('accounting'))return 'co';if(nm.includes('inspection'))return 'in';
-if(n!==null){if(n>=10)return 'co';if(n===8)return 'in';if(n>=5)return 'st';return 'ns'}return 'ns'}
+if(nm.includes('hybrid')||nm.includes('cancelled')||nm.includes('canceled'))return 'ns';
+if(nm==='completed'||nm.includes('collect')||nm.includes('accounting')||nm.includes('ops completed'))return 'co';
+if(nm.includes('inspection'))return 'in';
+if(n!==null){if(n>=13)return 'co';if(n>=5&&n<=11)return 'st';return 'ns'}return 'ns'}
 const catInfo=k=>CATS.find(x=>x.k===k);
 function wtOf(o){const g=(o.group||'').toLowerCase(),n=(o.name||'').toUpperCase();const w=[];
 if(g==='ee + hvac install'){w.push('EE','HVAC')}else if(g==='ee install'||g==='commercial'){w.push('EE')}else if(g==='hvac install'){w.push('HVAC')}
