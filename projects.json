@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T16:27:14-0700",
+ "generated": "2026-11-12T17:24:03-0700",
  "projects": [
   {
    "prj": "PRJ-225",
@@ -85,8 +85,8 @@
    "prj": "PRJ-221",
    "id": "1521004000001402016",
    "name": "Soto, Tania - 9818 Isaac Dr - 11/15/2026",
-   "stage": "04. Ops Review",
-   "color": "#AB7D0C",
+   "stage": "07. Scheduled",
+   "color": "#8737F0",
    "group": "EE Install",
    "address": "9818 Isaac DR, El Paso, TX 79928",
    "lat": 31.6682113,
