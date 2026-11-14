@@ -64,7 +64,7 @@ function catOf(o){const m=/^\s*(\d+)/.exec(o.stage||'');const n=m?(m[1].length==
 if(nm.includes('hybrid')||nm.includes('cancelled')||nm.includes('canceled'))return 'ns';
 if(nm==='completed'||nm.includes('collect')||nm.includes('accounting')||nm.includes('ops completed'))return 'co';
 if(nm.includes('inspection'))return 'in';
-if(n!==null){if(n>=13)return 'co';if(n>=5&&n<=11)return 'st';return 'ns'}return 'ns'}
+if(n!==null){if(n>=14)return 'co';if(n>=5&&n<=12)return 'st';return 'ns'}return 'ns'}
 const catInfo=k=>CATS.find(x=>x.k===k);
 function wtOf(o){const g=(o.group||'').toLowerCase(),n=(o.name||'').toUpperCase();const w=[];
 if(g==='ee + hvac install'){w.push('EE','HVAC')}else if(g==='ee install'||g==='commercial'){w.push('EE')}else if(g==='hvac install'){w.push('HVAC')}
