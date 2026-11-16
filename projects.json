@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-16T10:48:01-0700",
+ "generated": "2026-11-16T11:52:23-0700",
  "projects": [
   {
    "prj": "PRJ-225",
    "id": "1521004000001436006",
    "name": "Olivares, Christopher - 386 Morning Star Dr - 11/04/2026",
-   "stage": "01. New",
-   "color": "#F5EE76",
+   "stage": "02. Engineering Prep",
+   "color": "#75ADF0",
    "group": "EE Install",
    "address": "386 Morning Star Dr, El Paso, TX 79912",
    "lat": 31.827132327658887,
@@ -15,8 +15,8 @@
    "phone": "(915) 276-4336",
    "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001436006/dashboard",
    "companycam": "https://app.companycam.com/projects/114608184",
-   "fsm": null,
-   "fsm_wo": null,
+   "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004154148?tab=Service_Appointments",
+   "fsm_wo": "26WO-2736",
    "podium": null,
    "jobType": "PV + ESS",
    "outside": false
@@ -265,8 +265,8 @@
    "prj": "PRJ-211",
    "id": "1521004000001278003",
    "name": "Umeh, Randle - 6123 Via De Los Arboles - 10/29/2026",
-   "stage": "12. Corrections",
-   "color": "#FF8819",
+   "stage": "13. AHJ Inspection",
+   "color": "#808080",
    "group": "EE Install",
    "address": "6123 Via De Los Arboles, El Paso, TX 79932",
    "lat": 31.8754183,
