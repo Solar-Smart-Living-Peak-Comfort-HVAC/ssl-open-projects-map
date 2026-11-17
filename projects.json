@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T18:20:36-0700",
+ "generated": "2026-11-17T07:21:26-0700",
  "projects": [
   {
    "prj": "PRJ-225",
@@ -1945,8 +1945,8 @@
    "prj": "PRJ-81",
    "id": "1521004000000411496",
    "name": "Davis, Stephen - 2601056PV/PHP/MPU - 6/05/2026",
-   "stage": "13. AHJ Inspection",
-   "color": "#808080",
+   "stage": "12. Corrections",
+   "color": "#FF8819",
    "group": "EE + HVAC Install",
    "address": "5021 Wild Horse Rd, Las Cruces, NM 88011",
    "lat": 32.2941971,
