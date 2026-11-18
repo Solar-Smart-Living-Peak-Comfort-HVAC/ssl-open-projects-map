@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T06:55:42-0700",
+ "generated": "2026-11-18T10:56:35-0700",
  "projects": [
   {
    "prj": "PRJ-225",
@@ -125,8 +125,8 @@
    "prj": "PRJ-218",
    "id": "1521004000001366006",
    "name": "Aguirre, Monica Anais - 12162 Royal Woods Drive - 09/21/2026",
-   "stage": "02. Engineering Prep",
-   "color": "#75ADF0",
+   "stage": "03. Utility",
+   "color": "#F5D073",
    "group": "EE + HVAC Install",
    "address": "12162 Royal Woods Dr, El Paso, TX 79936",
    "lat": 31.779488899732808,
@@ -324,7 +324,7 @@
   {
    "prj": "PRJ-208",
    "id": "1521004000001219044",
-   "name": "Sculthorpe , Douglas - 7314 Sidewinder Bend Drive - 10/22/2026",
+   "name": "Sculthorpe , DouglSculthorpe , Douglasas - 7314 Sidewinder Bend Drive - 10/22/2026",
    "stage": "04. Ops Review",
    "color": "#AB7D0C",
    "group": "EE Install",
@@ -1082,26 +1082,6 @@
    "outside": false
   },
   {
-   "prj": "PRJ-139",
-   "id": "1521004000000592020",
-   "name": "Pegasus Support Services - 260067HVAC - 08/20/26",
-   "stage": "16. Collect",
-   "color": "#F2C145",
-   "group": "HVAC Install",
-   "address": "11541 Montana Ave, El Paso, TX 79936",
-   "lat": 31.80546323593252,
-   "lng": -106.29043567925692,
-   "source": "companycam",
-   "phone": "915-493-0593",
-   "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000000592020/dashboard",
-   "companycam": "https://app.companycam.com/projects/112943403",
-   "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000003542300?tab=Service_Appointments",
-   "fsm_wo": "26WO-1991",
-   "podium": null,
-   "jobType": "HVAC",
-   "outside": false
-  },
-  {
    "prj": "PRJ-134",
    "id": "1521004000000562004",
    "name": "Joyner, Denar - 2601086PV - 8/18/2026",
@@ -1145,8 +1125,8 @@
    "prj": "PRJ-132",
    "id": "1521004000000532179",
    "name": "Pate, Daniel - 2601084BATT - 8/15/2026",
-   "stage": "13. AHJ Inspection",
-   "color": "#808080",
+   "stage": "12. Corrections",
+   "color": "#FF8819",
    "group": "EE Install",
    "address": "83 Diablo Dr, Alamogordo, NM 88310",
    "lat": 32.8288655,
