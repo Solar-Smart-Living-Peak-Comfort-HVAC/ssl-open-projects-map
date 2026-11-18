@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T10:56:35-0700",
+ "generated": "2026-11-18T14:58:15-0700",
  "projects": [
   {
    "prj": "PRJ-225",
@@ -265,8 +265,8 @@
    "prj": "PRJ-211",
    "id": "1521004000001278003",
    "name": "Umeh, Randle - 6123 Via De Los Arboles - 10/29/2026",
-   "stage": "13. AHJ Inspection",
-   "color": "#808080",
+   "stage": "12. Corrections",
+   "color": "#FF8819",
    "group": "EE Install",
    "address": "6123 Via De Los Arboles, El Paso, TX 79932",
    "lat": 31.8754183,
@@ -1145,8 +1145,8 @@
    "prj": "PRJ-131",
    "id": "1521004000000532132",
    "name": "Montrose, Gerard - 2601083PV/BATT/HDM - 08/11/2026",
-   "stage": "13. AHJ Inspection",
-   "color": "#808080",
+   "stage": "12. Corrections",
+   "color": "#FF8819",
    "group": "EE Install",
    "address": "6004 Ojo De Agua Dr, El Paso, TX 79912",
    "lat": 31.8624384,
