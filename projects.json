@@ -1,6 +1,26 @@
 {
- "generated": "2026-11-18T14:58:15-0700",
+ "generated": "2026-11-19T07:00:13-0700",
  "projects": [
+  {
+   "prj": "PRJ-226",
+   "id": "1521004000001522003",
+   "name": "Wise, Michael - 4904 Dulcinea Drive - 11/18/2026",
+   "stage": "01. New",
+   "color": "#F5EE76",
+   "group": "Ungrouped Projects",
+   "address": "4904 Dulcinea Dr, Las Cruces, NM 88005",
+   "lat": 32.280122938424086,
+   "lng": -106.83664675801992,
+   "source": "companycam",
+   "phone": "(719) 469-0755",
+   "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001522003/dashboard",
+   "companycam": "https://app.companycam.com/projects/118778814",
+   "fsm": null,
+   "fsm_wo": null,
+   "podium": null,
+   "jobType": "EV + JB Warranty",
+   "outside": false
+  },
   {
    "prj": "PRJ-225",
    "id": "1521004000001436006",
