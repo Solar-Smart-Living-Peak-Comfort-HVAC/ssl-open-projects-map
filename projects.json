@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T06:55:32-0700",
+ "generated": "2026-11-25T10:57:38-0700",
  "projects": [
   {
    "prj": "PRJ-236",
@@ -275,8 +275,8 @@
    "phone": "(724) 986-7896",
    "zoho": "https://projects.zoho.com/portal/sslproject1#project/1521004000001317006/dashboard",
    "companycam": "https://app.companycam.com/projects/117450454",
-   "fsm": null,
-   "fsm_wo": null,
+   "fsm": "https://fsm.zoho.com/fsm/868429994#/tab/Work_Orders/17339000004235002?tab=Service_Appointments",
+   "fsm_wo": "26WO-2781",
    "podium": null,
    "jobType": "EV",
    "outside": false
